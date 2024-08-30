@@ -1,5 +1,6 @@
-# Contact Center Operations using Azure AI :telephone_receiver: :robot:
+![3](https://github.com/user-attachments/assets/dad008f7-0112-45a9-baa0-a2461a67130b)
 
+# Contact Center Operations using Azure AI :telephone_receiver: :robot:
 Welcome to the Activate GenAI Hackathon! Today, you're set to dive into the transformative world of AI, with a focus on utilizing the power of Azure OpenAI services. Prepare yourself for a day of intense learning, innovation, and hands-on experience that will elevate your understanding of AI integration in application development.
 
 

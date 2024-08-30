@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:08,325
+ Good morning, you’ve reached XYZ Telecom. My name is Lisa. How can I assist you today?
+
+2
+00:00:08,325 --> 00:00:15,525
+I’m really frustrated! I’ve been trying to get new TV service, and it’s been a nightmare!
+
+3
+00:00:15,525 --> 00:00:25,662
+ I’m truly sorry to hear that. Let’s make sure we resolve this for you right away. May I have your name and contact information, please?
+
+4
+00:00:25,662 --> 00:00:32,375
+It’s Michael Johnson, 555-321-4321.
+
+5
+00:00:32,375 --> 00:00:38,750
+ Thank you, Michael. And what is the address where you’d like to set up the new service?
+
+6
+00:00:38,750 --> 00:00:42,400
+789 Pine Street.
+
+7
+00:00:42,400 --> 00:00:51,312
+ Thank you. Can you tell me more about what you’re looking for in your TV service? Any specific channels or packages?
+
+8
+00:00:51,312 --> 00:00:59,750
+I want a good selection of family channels and some movie channels. I’ve been trying to get this set up for over a week!
+
+9
+00:00:59,750 --> 00:01:13,675
+ I understand your frustration, Michael, and I apologize for the delay. We have a family package that includes a wide variety of family and movie channels. Let me check if this is available at your address.
+
+10
+00:01:13,675 --> 00:01:16,075
+Please do.
+
+11
+00:01:16,075 --> 00:01:30,425
+ Good news, Michael! Our family package is available at 789 Pine Street. It’s $70 per month and includes all the channels you’re looking for. Shall we proceed with this package?
+
+12
+00:01:30,425 --> 00:01:33,462
+Yes, that sounds good.
+
+13
+00:01:33,462 --> 00:01:40,487
+ Great! I’ll process your order now. Do you need any additional equipment?
+
+14
+00:01:40,487 --> 00:01:43,625
+No, just the service.
+
+15
+00:01:43,625 --> 00:01:52,550
+ Understood. Let’s get your installation scheduled. How does Thursday between 9 AM and 11 AM sound?
+
+16
+00:01:52,550 --> 00:01:55,237
+That works for me.
+
+17
+00:01:55,237 --> 00:02:09,137
+ Excellent, Michael. Your installation is scheduled for Thursday between 9 AM and 11 AM. You’ll receive a confirmation email shortly. Is there anything else I can help you with today?
+
+18
+00:02:09,137 --> 00:02:14,325
+No, that’s all. Thank you for sorting this out.
+
+19
+00:02:14,325 --> 00:02:24,850
+ You’re very welcome, Michael. I’m glad we could resolve this for you. Thank you for choosing [Company Name]. Have a great day!
+
+20
+00:02:24,850 --> 00:02:27,587
+Thanks, you too!
+
+21
+00:02:27,587 --> 00:02:31,900
+ Thank you, Michael. Take care!
+

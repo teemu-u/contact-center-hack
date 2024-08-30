@@ -1,0 +1,17 @@
+ Good afternoon! Thank you for calling XYZ Telecommunications. My name is Lisa. How can I assist you today?  
+ My TV service is down, and I’m really annoyed! It’s been like this for hours! 
+I’m very sorry for the inconvenience, and I understand how upsetting that can be. Let’s get this fixed for you. Can I please have your name and account number?  
+ It’s John, and my account number is 654321.  
+ Thank you, Lisa. I’ll need a bit more information to help you better. How long have you been experiencing this issue, and have you made any recent changes to your equipment or service plan?  
+ It started this morning, and no, I haven’t changed anything.  
+ I appreciate the details. Let’s start by ensuring both your TV and set-top box are powered on. Could you please check that for me?  
+ Yes, they’re both on.  
+ Great. Now, let’s try resetting your set-top box. I’ll guide you through the steps. Are you ready?  
+ Yes, go ahead.  
+ Please press and hold the reset button on your set-top box for 10 seconds, then release it. Let’s wait for it to reboot.  
+ Okay, it’s rebooting.  
+ Excellent. Once it’s back on, could you check if the issue persists?  
+ It’s working now! Thank you so much, Lisa!  
+ I’m glad we could get it sorted out! If you have any more issues, please don’t hesitate to reach out. Is there anything else I can assist you with today?  
+ No, that’s all. Thanks again!  
+ You’re very welcome, John! Have a wonderful day! 

@@ -1,0 +1,12 @@
+Good afternoon! Thank you for calling XYZ Telecommunications. My name is Lisa. How can I assist you today? 
+Hi there! I'd like to update my contact information. I recently changed my phone number. 
+Of course! I'd be happy to help with that. First, for security purposes, may I please have your account number or service ID? 
+Sure, it's 123456. 
+Thank you. To further verify your identity, could you please confirm your date of birth and address? 
+My date of birth is January 15, 1985, and my address is 456 Elm Street, Springfield. 
+Perfect. Thank you for confirming that. Now, could you provide me with your new phone number? 
+It's 555-123-4567. 
+Got it. I'll update that information for you right away. Just a moment, please... All set! Your new phone number has been updated. Is there anything else I can help you with today? 
+No, that's all. Thank you so much! 
+You're welcome! A confirmation email with the changes has been sent to you. If you need any further assistance, feel free to call us anytime. Have a wonderful day! 
+Thanks, you too! 

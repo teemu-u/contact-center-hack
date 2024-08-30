@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:08,225
+ Hi, thank you for calling our support center. My name is Lisa. How can I assist you today?  
+
+2
+00:00:08,225 --> 00:00:15,175
+ I’ve been having internet issues all day and nothing is working. I’m really frustrated!  
+
+3
+00:00:15,175 --> 00:00:28,725
+ I’m really sorry to hear that you’re experiencing this issue. I understand how frustrating it can be. Let’s work together to get it resolved. Can I please have your account number or service ID? 
+
+4
+00:00:28,725 --> 00:00:33,125
+It’s 11223344. 
+
+5
+00:00:33,125 --> 00:00:40,062
+Thank you. Can you describe the issue for me and let me know if there are any error messages? 
+
+6
+00:00:40,062 --> 00:00:44,787
+The internet keeps dropping, no error messages though. 
+
+7
+00:00:44,787 --> 00:00:47,925
+How long has this been happening? 
+
+8
+00:00:47,925 --> 00:00:50,700
+Since this morning. 
+
+9
+00:00:50,700 --> 00:01:04,987
+I appreciate you providing that information. I’ll check if there’s a known outage in your area.  There are no outages reported. Can we try restarting your modem and router? 
+
+10
+00:01:04,987 --> 00:01:08,587
+I’ve already done that several times. 
+
+11
+00:01:08,587 --> 00:01:15,525
+I understand. Let’s ensure all the cables are securely connected and undamaged. 
+
+12
+00:01:15,525 --> 00:01:18,925
+Yes, everything is fine. 
+
+13
+00:01:18,925 --> 00:01:26,862
+Thanks for checking. Let’s look at the lights on your modem/router. Are they all on and stable? 
+
+14
+00:01:26,862 --> 00:01:30,562
+Yes, they’re all on and stable. 
+
+15
+00:01:30,562 --> 00:01:37,500
+Alright. Are other devices in your house also experiencing connectivity issues? 
+
+16
+00:01:37,500 --> 00:01:41,062
+Yes, everything is affected. 
+
+17
+00:01:41,062 --> 00:02:04,312
+Thanks for confirming. Since basic troubleshooting hasn’t worked, I’ll perform remote diagnostics.   It looks like there’s an issue on our end. I’ll escalate this to our technical team. Here’s your trouble ticket number, 55667788. We’ll work on this and update you soon. 
+
+18
+00:02:04,312 --> 00:02:11,150
+Thank you, Lisa. I was really frustrated, but you’ve been very helpful. 
+
+19
+00:02:11,150 --> 00:02:21,025
+I’m glad I could assist you. We’ll get this fixed as soon as possible. Thank you for your patience. Have a great day!
+

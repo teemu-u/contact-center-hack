@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:08,550
+Thank you for calling XYZ Telecommunications. My name is Lisa. How may I assist you today?  
+
+2
+00:00:08,550 --> 00:00:16,412
+I've been trying to reset my password for hours and it's just not working! This is so frustrating!  
+
+3
+00:00:16,412 --> 00:00:27,462
+I'm really sorry to hear that you're having trouble. Let's get this sorted out for you as quickly as possible. Can I start by getting your account number or service ID?  
+
+4
+00:00:27,462 --> 00:00:34,187
+It's 789012. This is really annoying!  
+
+5
+00:00:34,187 --> 00:00:43,300
+I understand your frustration, and I'm here to help. To verify your identity, could you please confirm your date of birth and address?  
+
+6
+00:00:43,300 --> 00:00:50,025
+April 10, 1990, and 789 Oak Street, Rivertown.
+
+7
+00:00:50,025 --> 00:01:01,375
+Thank you. I appreciate your patience. I'll need to ask you a security question to complete the verification. What was the name of your first pet?
+
+8
+00:01:01,375 --> 00:01:03,687
+Max.
+
+9
+00:01:03,687 --> 00:01:15,700
+Great, thank you. Let's go ahead and reset your password. I'll send an OTP to your registered email address. Could you please check your email for the code?
+
+10
+00:01:15,700 --> 00:01:21,987
+Alright, got it. The code is 654321.
+
+11
+00:01:21,987 --> 00:01:38,900
+Thank you. I'll reset your password now. Please hold on... Done! You'll receive a temporary password shortly. You can use it to log in and create a new password. Is there anything else I can assist you with?
+
+12
+00:01:38,900 --> 00:01:42,862
+No, just glad this is finally done.
+
+13
+00:01:42,862 --> 00:01:57,012
+I apologize for the inconvenience. A confirmation email with the details has been sent to you. If you have any further issues, please don't hesitate to contact us. Have a better day ahead!
+
+14
+00:01:57,012 --> 00:01:59,287
+Thanks.
+

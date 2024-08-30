@@ -1,0 +1,13 @@
+Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?
+This is ridiculous! I’ve been overcharged by $100, and I need this fixed now!
+I’m really sorry to hear that you’re experiencing this, and I understand how frustrating it can be. Let’s get this resolved for you. Can you please provide your account number or service ID?
+It’s 654321. I can’t believe this is happening.
+Thank you. I’m pulling up your account now. Can you tell me more about the $100 charge you’re referring to?
+It’s listed as “data overage” for last month. I didn’t use that much data!
+I understand your concern. Let me take a closer look at your usage details. I see there was a significant spike in data usage last month. It might be due to a software update or streaming. Are you aware of any such activity?
+Oh, wait, I did download a couple of large updates. That must be it.
+That makes sense. To help avoid this in the future, we can set up a data usage alert for you. Additionally, I can offer you a one-time courtesy credit of $50 to help with this unexpected charge. How does that sound?
+That would be great, thank you. I appreciate your help.
+You’re welcome! I’ve applied the credit to your account. Is there anything else I can assist you with today?
+No, that’s all. Thanks again, Lisa. You’ve been really helpful.
+I’m glad I could help. Have a wonderful day!

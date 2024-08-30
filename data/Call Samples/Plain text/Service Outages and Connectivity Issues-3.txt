@@ -1,0 +1,19 @@
+ Hi, thank you for calling our support center. My name is Lisa. How can I assist you today?  
+ I’ve been having internet issues all day and nothing is working. I’m really frustrated!  
+ I’m really sorry to hear that you’re experiencing this issue. I understand how frustrating it can be. Let’s work together to get it resolved. Can I please have your account number or service ID? 
+It’s 11223344. 
+Thank you. Can you describe the issue for me and let me know if there are any error messages? 
+The internet keeps dropping, no error messages though. 
+How long has this been happening? 
+Since this morning. 
+I appreciate you providing that information. I’ll check if there’s a known outage in your area.  There are no outages reported. Can we try restarting your modem and router? 
+I’ve already done that several times. 
+I understand. Let’s ensure all the cables are securely connected and undamaged. 
+Yes, everything is fine. 
+Thanks for checking. Let’s look at the lights on your modem/router. Are they all on and stable? 
+Yes, they’re all on and stable. 
+Alright. Are other devices in your house also experiencing connectivity issues? 
+Yes, everything is affected. 
+Thanks for confirming. Since basic troubleshooting hasn’t worked, I’ll perform remote diagnostics.   It looks like there’s an issue on our end. I’ll escalate this to our technical team. Here’s your trouble ticket number, 55667788. We’ll work on this and update you soon. 
+Thank you, Lisa. I was really frustrated, but you’ve been very helpful. 
+I’m glad I could assist you. We’ll get this fixed as soon as possible. Thank you for your patience. Have a great day! 

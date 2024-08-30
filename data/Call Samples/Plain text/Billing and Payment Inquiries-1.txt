@@ -1,0 +1,11 @@
+ Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+ Hi Lisa! My name is John, and I hope you’re having a great day. I was just looking at my bill and noticed a charge I didn't expect. Could you help me out with that?  
+ Hi John! I'm doing well, thank you for asking. I'd be happy to help you with your bill. Can I please have your account number or service ID?  
+ Sure, it’s 123456.  
+ Thank you, John. Let me pull up your account. While I do that, could you tell me which charge you’re referring to?  
+ It's a $15 charge listed as "additional services" on my latest statement.  
+ I see the charge you're talking about. Let me explain that for you. This charge is for an international call you made last month. Does that ring a bell?  
+ Oh, yes, I remember now! Thanks for clearing that up, Lisa.  
+ No problem at all, John. Is there anything else I can help you with today?  
+ Nope, that’s all. You’ve been great. Thanks again!  
+ My pleasure, John. Have a wonderful day! 

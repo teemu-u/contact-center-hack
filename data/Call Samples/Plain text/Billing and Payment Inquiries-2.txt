@@ -1,0 +1,13 @@
+ Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+ Yeah, hi. I'm pretty annoyed with you guys right now. I was overcharged on my last bill, and I want it fixed immediately.  
+ I’m really sorry to hear that you’re upset. Let’s get this sorted out for you. May I have your account number or service ID, please?  
+ It’s 987654.  
+ Thank you. Can you please tell me more about the charge you believe is incorrect?  
+ It's a $50 charge for something I didn’t authorize. This is unacceptable!  
+ I understand your frustration. Let me look into this for you. This $50 charge appears to be for a premium service subscription. Did you or anyone else in your household sign up for this service?  
+ No, we did not!  
+ I apologize for the inconvenience. I will remove this charge from your account and issue a refund. You should see the adjustment within the next 3-5 business days.  
+ Fine, just make sure it doesn’t happen again.  
+ I assure you it won’t. Is there anything else I can help you with today?  
+ No, that's it.  
+ Thank you for calling XYZ Telecom. Have a good day.

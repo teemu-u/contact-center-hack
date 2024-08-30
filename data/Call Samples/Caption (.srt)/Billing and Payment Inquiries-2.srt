@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:07,925
+ Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+
+2
+00:00:07,925 --> 00:00:18,262
+ Yeah, hi. I'm pretty annoyed with you guys right now. I was overcharged on my last bill, and I want it fixed immediately.  
+
+3
+00:00:18,262 --> 00:00:28,875
+ I’m really sorry to hear that you’re upset. Let’s get this sorted out for you. May I have your account number or service ID, please?  
+
+4
+00:00:28,875 --> 00:00:34,212
+ It’s 987654.  
+
+5
+00:00:34,212 --> 00:00:40,375
+ Thank you. Can you please tell me more about the charge you believe is incorrect?  
+
+6
+00:00:40,375 --> 00:00:47,387
+ It's a $50 charge for something I didn’t authorize. This is unacceptable!  
+
+7
+00:00:47,387 --> 00:01:02,575
+ I understand your frustration. Let me look into this for you. This $50 charge appears to be for a premium service subscription. Did you or anyone else in your household sign up for this service?  
+
+8
+00:01:02,575 --> 00:01:05,575
+ No, we did not!  
+
+9
+00:01:05,575 --> 00:01:18,375
+ I apologize for the inconvenience. I will remove this charge from your account and issue a refund. You should see the adjustment within the next 3-5 business days.  
+
+10
+00:01:18,375 --> 00:01:22,525
+ Fine, just make sure it doesn’t happen again.  
+
+11
+00:01:22,525 --> 00:01:28,125
+ I assure you it won’t. Is there anything else I can help you with today?  
+
+12
+00:01:28,125 --> 00:01:30,912
+ No, that's it.  
+
+13
+00:01:30,912 --> 00:01:36,400
+ Thank you for calling XYZ Telecom. Have a good day.
+

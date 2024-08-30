@@ -1,0 +1,23 @@
+<!--ID=B7267351-473F-409D-9765-754A8EBCDE05;Version=1|{"VoiceNameToIdMapItems":[{"Name":"Microsoft Server Speech Text to Speech Voice (en-US, AriaNeural)","ShortName":"en-US-AriaNeural","Locale":"en-US","Id":"27e2f1c8-cfe0-4324-88e2-cd0bafeffe1b","VoiceType":"StandardVoice"},{"Name":"Microsoft Server Speech Text to Speech Voice (en-US, GuyNeural)","ShortName":"en-US-GuyNeural","Locale":"en-US","Id":"e0638b39-fbd2-4497-a482-e2f65759412a","VoiceType":"StandardVoice"}]}-->
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" xml:lang="en-US"><voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Good morning! Thank you for calling our support center. My name is Lisa. How can I help you today?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Hi Lisa! My name is John and I’ve been having some trouble with my internet connection for the past few hours. Can you help me out?</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Of course, John! I’m really sorry for the inconvenience. Let’s get this sorted out for you. Can I please have your account number or service ID to get started?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Sure, it’s 12345678.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Great, thank you. Can you describe the issue you’re experiencing? Are there any error messages?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">The internet just keeps dropping every few minutes. No specific error messages though.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">I see. How long has this been happening, John?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">It started this morning.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Thanks for that information. Let me quickly check if there is a known outage in your area.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">It looks like there aren’t any reported outages. Let’s try some troubleshooting steps. Can you first try restarting your modem and router?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Sure, one second.</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Okay, I’ve restarted them.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Perfect. Are all the cables securely connected and undamaged?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Yes, everything looks fine.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Alright, let’s check the lights on your modem/router. Are they all on and stable?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Yes, they’re all on and stable.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Great! Can you check if other devices in your house are also experiencing connectivity issues?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Yes, they all seem to be having the same problem.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Thank you for checking that. Since the basic steps haven’t resolved the issue, I’ll perform remote diagnostics.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">It appears there’s an issue on our end. I’ll escalate this to our technical team. Here’s your trouble ticket number, 987654321. We’ll work on resolving this and provide an update soon.</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Thank you, Lisa. You’ve been really helpful!</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">My pleasure, John. We’ll get this fixed as soon as possible. Have a wonderful day!</voice></speak>

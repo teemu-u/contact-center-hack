@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:10,387
+Good morning! Thank you for calling XYZ Telecommunications. My name is Lisa. How can I assist you today?
+
+2
+00:00:10,387 --> 00:00:18,312
+Hi Lisa! I'm having some trouble with my internet connection. It keeps cutting out.
+
+3
+00:00:18,312 --> 00:00:27,912
+Oh no, I'm sorry to hear that! Let's get this sorted out for you. May I have your name and account number to get started?
+
+4
+00:00:27,912 --> 00:00:33,687
+Sure, my name is Shawn, and my account number is 123456.
+
+5
+00:00:33,687 --> 00:00:47,150
+Thank you, Shawn. I’ll also need a bit more information to help you better. How long have you been experiencing this issue, and have you made any recent changes to your equipment or service plan?
+
+6
+00:00:47,150 --> 00:00:52,425
+It started yesterday, and no, I haven’t changed anything recently.
+
+7
+00:00:52,425 --> 00:01:03,950
+Got it. Let’s start with some basic troubleshooting steps. Could you please restart your modem and router? I'll hold the line while you do that.
+
+8
+00:01:03,950 --> 00:01:11,662
+Alright, give me a minute.  Okay, I’ve restarted them.
+
+9
+00:01:11,662 --> 00:01:18,737
+Great. Now, can you check if all the lights on the modem and router are on and green?
+
+10
+00:01:18,737 --> 00:01:21,412
+Yes, they are.
+
+11
+00:01:21,412 --> 00:01:28,287
+Perfect. Are you still experiencing the connectivity issue on all your devices?
+
+12
+00:01:28,287 --> 00:01:32,074
+No, it seems to be working fine now!
+
+13
+00:01:32,074 --> 00:01:42,637
+That’s wonderful to hear! If you encounter any more issues, don’t hesitate to call us back. Is there anything else I can help you with today?
+
+14
+00:01:42,637 --> 00:01:47,349
+Nope, that’s all. Thanks, Lisa!
+
+15
+00:01:47,349 --> 00:01:52,287
+You’re welcome, Shawn! Have a great day!
+

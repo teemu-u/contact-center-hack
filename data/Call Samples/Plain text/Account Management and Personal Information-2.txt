@@ -1,0 +1,14 @@
+Thank you for calling XYZ Telecommunications. My name is Lisa. How may I assist you today?  
+I've been trying to reset my password for hours and it's just not working! This is so frustrating!  
+I'm really sorry to hear that you're having trouble. Let's get this sorted out for you as quickly as possible. Can I start by getting your account number or service ID?  
+It's 789012. This is really annoying!  
+I understand your frustration, and I'm here to help. To verify your identity, could you please confirm your date of birth and address?  
+April 10, 1990, and 789 Oak Street, Rivertown.
+Thank you. I appreciate your patience. I'll need to ask you a security question to complete the verification. What was the name of your first pet?
+Max.
+Great, thank you. Let's go ahead and reset your password. I'll send an OTP to your registered email address. Could you please check your email for the code?
+Alright, got it. The code is 654321.
+Thank you. I'll reset your password now. Please hold on... Done! You'll receive a temporary password shortly. You can use it to log in and create a new password. Is there anything else I can assist you with?
+No, just glad this is finally done.
+I apologize for the inconvenience. A confirmation email with the details has been sent to you. If you have any further issues, please don't hesitate to contact us. Have a better day ahead!
+Thanks.

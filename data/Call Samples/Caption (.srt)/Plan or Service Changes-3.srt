@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:09,050
+ Good morning! Thank you for calling XYZ Telecom. This is Lisa. How can I help you today?  
+
+2
+00:00:09,050 --> 00:00:14,325
+ I’m very unhappy with my current plan and I need to change it right away!  
+
+3
+00:00:14,325 --> 00:00:24,462
+ I’m really sorry to hear that you’re having a tough time. I’m here to help. Could you please provide your name and account number so I can look into this for you?  
+
+4
+00:00:24,462 --> 00:00:30,087
+ It’s Edward Davis, account number 456789.  
+
+5
+00:00:30,087 --> 00:00:37,812
+ Thank you, Edward. To confirm your identity, could you tell me the last four digits of your phone number?  
+
+6
+00:00:37,812 --> 00:00:42,187
+ It’s 9876.  
+
+7
+00:00:42,187 --> 00:00:51,650
+ Thank you. I see you’re on our Basic Plan. Could you tell me more about what’s been frustrating you so we can find a better solution?  
+
+8
+00:00:51,650 --> 00:00:57,300
+ I’m constantly running out of data and it’s costing me so much more every month.  
+
+9
+00:00:57,300 --> 00:01:16,737
+ I can imagine how frustrating that must be. Let’s find a plan that gives you more data and puts an end to those extra charges. We have a Plus Plan with 15GB of data and an Unlimited Plan that might suit you better. The Unlimited Plan is very popular for heavy data users like yourself.  
+
+10
+00:01:16,737 --> 00:01:20,500
+ How much more is the Unlimited Plan?  
+
+11
+00:01:20,500 --> 00:01:31,587
+ It’s $30 more per month, but you’ll never have to worry about running out of data again. It also includes some great features like free streaming on select platforms.  
+
+12
+00:01:31,587 --> 00:01:37,825
+ That does sound better. Will I be charged extra for changing mid-cycle?  
+
+13
+00:01:37,825 --> 00:01:50,337
+ Since you’re upgrading, there might be a small proration on your next bill, but after that, it will be the regular monthly charge. I’ll make sure to note this in your account to avoid any confusion.  
+
+14
+00:01:50,337 --> 00:01:54,575
+ Alright, I think I’ll go with the Unlimited Plan then.  
+
+15
+00:01:54,575 --> 00:02:10,537
+ Excellent choice, Edward! I’ll process that for you right now. The change will take effect immediately, and you might need to restart your device to see the new data allowance. I’ll also send you a confirmation email with all the details.  
+
+16
+00:02:10,537 --> 00:02:17,325
+ Thank you for making this easy. I was really upset, but you’ve been very helpful.  
+
+17
+00:02:17,325 --> 00:02:27,150
+ I’m glad I could assist, Edward. It’s important to us that you’re satisfied with your service. Is there anything else I can help you with today?  
+
+18
+00:02:27,150 --> 00:02:31,625
+ No, that’s all. Thanks again!  
+
+19
+00:02:31,625 --> 00:02:36,537
+ You’re welcome! Have a wonderful day, Emily.  
+
+20
+00:02:36,537 --> 00:02:39,300
+ You too, bye!  
+
+21
+00:02:39,300 --> 00:02:41,487
+ Goodbye!
+

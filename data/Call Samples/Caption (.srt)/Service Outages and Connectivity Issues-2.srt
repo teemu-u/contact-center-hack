@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:07,862
+ I've been dealing with this internet issue for HOURS! It keeps dropping. This is so frustrating!
+
+2
+00:00:07,862 --> 00:00:20,300
+ I’m really sorry to hear that you’re having trouble. I understand how frustrating this can be. Let’s get this fixed for you. Can I please have your account number or service ID?
+
+3
+00:00:20,300 --> 00:00:27,050
+ It’s 87654321. Can we just get this over with?
+
+4
+00:00:27,050 --> 00:00:35,687
+ Absolutely, I’ll do my best to resolve this quickly. Can you describe the issue and any error messages you might be seeing?
+
+5
+00:00:35,687 --> 00:00:40,900
+ The connection just drops every few minutes, no error messages.
+
+6
+00:00:40,900 --> 00:00:45,875
+ I understand. How long has this been happening?
+
+7
+00:00:45,875 --> 00:00:48,650
+ Since this morning.
+
+8
+00:00:48,650 --> 00:01:03,725
+ Thank you for that information. Let me check if there’s a known outage in your area.  There are no outages reported. Let’s try some troubleshooting steps. Can you restart your modem and router?
+
+9
+00:01:03,725 --> 00:01:07,875
+ I’ve done that already, multiple times!
+
+10
+00:01:07,875 --> 00:01:15,187
+ I appreciate your patience. Can you check if all cables are securely connected and undamaged?
+
+11
+00:01:15,187 --> 00:01:18,450
+ Yes, they are fine.
+
+12
+00:01:18,450 --> 00:01:25,225
+ Alright, let’s check the lights on your modem/router. Are they all on and stable?
+
+13
+00:01:25,225 --> 00:01:28,225
+ Yes, they are.
+
+14
+00:01:28,225 --> 00:01:34,837
+ Thank you. Let’s see if other devices in your house are also facing the same issue.
+
+15
+00:01:34,837 --> 00:01:38,400
+ Yes, everything is affected.
+
+16
+00:01:38,400 --> 00:01:59,650
+ Since basic troubleshooting hasn’t resolved the issue, I’ll run remote diagnostics.  It appears there’s an issue on our end. I’ll escalate this to our technical team. Here’s your trouble ticket number, 123456789. We’ll provide an update soon.
+
+17
+00:01:59,650 --> 00:02:02,925
+ Fine, just get it fixed!
+
+18
+00:02:02,925 --> 00:02:10,762
+ We’ll work on it right away. Thank you for your patience, and again, I apologize for the inconvenience.
+

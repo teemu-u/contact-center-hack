@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:09,912
+Good evening! Thank you for calling XYZ Telecommunications. My name is Lisa. How can I help you today?
+
+2
+00:00:09,912 --> 00:00:16,650
+I've been waiting forever to update my payment information, and no one seems to be able to help me!
+
+3
+00:00:16,650 --> 00:00:28,000
+I'm really sorry for the delay and any inconvenience it has caused. Let's get this resolved right away. Can you provide me with your account number or service ID?
+
+4
+00:00:28,000 --> 00:00:35,737
+It's 345678. This is so frustrating!
+
+5
+00:00:35,737 --> 00:00:45,725
+I understand your frustration, and I appreciate your patience. To ensure your account security, could you please confirm your date of birth and address?
+
+6
+00:00:45,725 --> 00:00:51,987
+July 20, 1982, and 123 Maple Street, Greenfield.
+
+7
+00:00:51,987 --> 00:01:01,900
+Thank you for that information. To complete the verification, I'll need to ask you a security question. What is your mother's maiden name?
+
+8
+00:01:01,900 --> 00:01:04,125
+Johnson.
+
+9
+00:01:04,125 --> 00:01:12,650
+Thank you. Now, let's update your payment information. Could you provide me with the new payment details?
+
+10
+00:01:12,650 --> 00:01:23,075
+Sure, the new card number is 9876 5432 1098 7654, and the expiration date is 12/25.
+
+11
+00:01:23,075 --> 00:01:34,650
+Got it. I'll update that for you right now. Please hold on... All set! Your payment information has been successfully updated.
+
+12
+00:01:34,650 --> 00:01:39,175
+Finally! Thanks for handling that.
+
+13
+00:01:39,175 --> 00:01:50,312
+I apologize for the inconvenience you faced earlier. A confirmation email with the changes has been sent to you. Is there anything else I can help you with today?
+
+14
+00:01:50,312 --> 00:01:55,375
+No, that's all. Thanks for sorting this out.
+
+15
+00:01:55,375 --> 00:02:06,712
+You're welcome! I'm glad we could get everything sorted. If you need further assistance, please feel free to reach out to us. Have a great evening!
+
+16
+00:02:06,712 --> 00:02:09,637
+You too, thanks!
+

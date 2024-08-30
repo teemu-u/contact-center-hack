@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:09,412
+ Good morning! Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+
+2
+00:00:09,412 --> 00:00:17,550
+ Hi! I’m interested in setting up a new internet and TV service at my home. Can you help me with that?  
+
+3
+00:00:17,550 --> 00:00:25,750
+ Absolutely, I'd be delighted to help you with that. May I please have your name and contact information to get started?  
+
+4
+00:00:25,750 --> 00:00:33,450
+ Sure, my name is John Doe, and my number is 555-123-4567.  
+
+5
+00:00:33,450 --> 00:00:40,287
+ Thank you, John. And what is the service address where you’d like to set up the new services?  
+
+6
+00:00:40,287 --> 00:00:44,000
+ It’s 123 Maple Street.  
+
+7
+00:00:44,000 --> 00:00:55,512
+ Great, thank you! Now, could you tell me a bit more about what you’re looking for in your internet and TV services? Do you have any specific requirements or preferences?  
+
+8
+00:00:55,512 --> 00:01:02,062
+ I’m looking for high-speed internet and a good selection of TV channels, especially sports channels.  
+
+9
+00:01:02,062 --> 00:01:20,487
+ Perfect, we have several plans that might be a great fit for you. For high-speed internet, we offer speeds up to 1 Gbps. For TV, we have a package that includes all the major sports channels. Let me check if these services are available at your address.  
+
+10
+00:01:20,487 --> 00:01:23,050
+ That sounds good!  
+
+11
+00:01:23,050 --> 00:01:40,437
+ Wonderful! I’ve checked, and both our high-speed internet and comprehensive TV package are available at your address. The internet plan costs $60 per month, and the TV package is $80 per month. Would you like to proceed with these options?  
+
+12
+00:01:40,437 --> 00:01:43,637
+ Yes, that works for me.  
+
+13
+00:01:43,637 --> 00:01:54,125
+ Excellent choice! I’ll process your order now. Could you please confirm if you need any additional equipment or if you’ll be porting your current phone number?  
+
+14
+00:01:54,125 --> 00:01:59,050
+ No additional equipment needed, and I don’t need to port a phone number.  
+
+15
+00:01:59,050 --> 00:02:07,625
+ Great! The next step is to schedule an installation appointment. When would be a convenient time for you?  
+
+16
+00:02:07,625 --> 00:02:10,375
+ How about this Friday?  
+
+17
+00:02:10,375 --> 00:02:19,587
+ Let me check... Yes, we have an opening this Friday between 10 AM and 12 PM. Does that work for you?  
+
+18
+00:02:19,587 --> 00:02:22,762
+ Yes, that’s perfect.  
+
+19
+00:02:22,762 --> 00:02:37,375
+ Fantastic! I’ve scheduled your installation for this Friday between 10 AM and 12 PM. You’ll receive a confirmation email shortly with all the details. Is there anything else I can assist you with today?  
+
+20
+00:02:37,375 --> 00:02:42,262
+ No, that’s all. Thank you so much!  
+
+21
+00:02:42,262 --> 00:02:50,337
+ You’re very welcome, John! Thank you for choosing XYZ Telecom. Have a great day!
+

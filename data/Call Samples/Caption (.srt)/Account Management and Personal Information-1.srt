@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:10,250
+Good afternoon! Thank you for calling XYZ Telecommunications. My name is Lisa. How can I assist you today? 
+
+2
+00:00:10,250 --> 00:00:18,325
+Hi there! I'd like to update my contact information. I recently changed my phone number. 
+
+3
+00:00:18,325 --> 00:00:28,450
+Of course! I'd be happy to help with that. First, for security purposes, may I please have your account number or service ID? 
+
+4
+00:00:28,450 --> 00:00:32,662
+Sure, it's 123456. 
+
+5
+00:00:32,662 --> 00:00:40,000
+Thank you. To further verify your identity, could you please confirm your date of birth and address? 
+
+6
+00:00:40,000 --> 00:00:48,325
+My date of birth is January 15, 1985, and my address is 456 Elm Street, Springfield. 
+
+7
+00:00:48,325 --> 00:00:56,100
+Perfect. Thank you for confirming that. Now, could you provide me with your new phone number? 
+
+8
+00:00:56,100 --> 00:01:01,475
+It's 555-123-4567. 
+
+9
+00:01:01,475 --> 00:01:16,200
+Got it. I'll update that information for you right away. Just a moment, please... All set! Your new phone number has been updated. Is there anything else I can help you with today? 
+
+10
+00:01:16,200 --> 00:01:21,087
+No, that's all. Thank you so much! 
+
+11
+00:01:21,087 --> 00:01:33,625
+You're welcome! A confirmation email with the changes has been sent to you. If you need any further assistance, feel free to call us anytime. Have a wonderful day! 
+
+12
+00:01:33,625 --> 00:01:36,550
+Thanks, you too!
+

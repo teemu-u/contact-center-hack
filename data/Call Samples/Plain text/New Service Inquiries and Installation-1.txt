@@ -1,0 +1,21 @@
+ Good morning! Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+ Hi! I’m interested in setting up a new internet and TV service at my home. Can you help me with that?  
+ Absolutely, I'd be delighted to help you with that. May I please have your name and contact information to get started?  
+ Sure, my name is John Doe, and my number is 555-123-4567.  
+ Thank you, John. And what is the service address where you’d like to set up the new services?  
+ It’s 123 Maple Street.  
+ Great, thank you! Now, could you tell me a bit more about what you’re looking for in your internet and TV services? Do you have any specific requirements or preferences?  
+ I’m looking for high-speed internet and a good selection of TV channels, especially sports channels.  
+ Perfect, we have several plans that might be a great fit for you. For high-speed internet, we offer speeds up to 1 Gbps. For TV, we have a package that includes all the major sports channels. Let me check if these services are available at your address.  
+ That sounds good!  
+ Wonderful! I’ve checked, and both our high-speed internet and comprehensive TV package are available at your address. The internet plan costs $60 per month, and the TV package is $80 per month. Would you like to proceed with these options?  
+ Yes, that works for me.  
+ Excellent choice! I’ll process your order now. Could you please confirm if you need any additional equipment or if you’ll be porting your current phone number?  
+ No additional equipment needed, and I don’t need to port a phone number.  
+ Great! The next step is to schedule an installation appointment. When would be a convenient time for you?  
+ How about this Friday?  
+ Let me check... Yes, we have an opening this Friday between 10 AM and 12 PM. Does that work for you?  
+ Yes, that’s perfect.  
+ Fantastic! I’ve scheduled your installation for this Friday between 10 AM and 12 PM. You’ll receive a confirmation email shortly with all the details. Is there anything else I can assist you with today?  
+ No, that’s all. Thank you so much!  
+ You’re very welcome, John! Thank you for choosing XYZ Telecom. Have a great day! 

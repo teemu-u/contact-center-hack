@@ -1,0 +1,17 @@
+ Thank you for calling XYZ Telecommunications. My name is Lisa. How can I assist you today?
+ My internet has been down for hours! I’m really frustrated!
+ I’m truly sorry for the inconvenience, and I understand how frustrating that can be. Let’s work together to get this resolved as quickly as possible. Can I please have your name and account number?
+ It’s John, and my account number is 789012.
+ Thank you, John. I’ll also need a bit more information to help you better. How long has this issue been going on, and have you made any recent changes to your equipment or service plan?
+ It started this morning, and no, nothing’s changed.
+ I appreciate the information. Let’s start by checking if there are any known outages in your area. Please hold for a moment.  John, it seems there are no known outages. Let’s proceed with some troubleshooting steps. Could you please restart your modem and router?
+ I’ve done that already, and it didn’t help!
+ I understand your frustration. Let’s try checking the modem and router lights. Are they all on and green?
+ The power light is green, but the internet light is off.
+ Thank you for that information. It seems like there might be an issue with the connection. Can you please check if any cables are loose or damaged?
+ All cables seem fine.
+ I see. Let me run a remote diagnostic to get more details. Please hold for a moment.  John, our diagnostics indicate a possible issue with the line. I’ll need to escalate this to our technical team. I’ll create a trouble ticket and provide you with the ticket number.
+ Fine, just get it fixed.
+ Absolutely. Your ticket number is 345678, and the estimated resolution timeframe is within 24 hours. We’ll keep you updated. Is there anything else I can assist you with today?
+ No, that’s it.
+ Thank you for your patience, John. We’ll resolve this as soon as possible. Have a good day.

@@ -1,0 +1,16 @@
+<!--ID=B7267351-473F-409D-9765-754A8EBCDE05;Version=1|{"VoiceNameToIdMapItems":[{"Name":"Microsoft Server Speech Text to Speech Voice (en-US, AriaNeural)","ShortName":"en-US-AriaNeural","Locale":"en-US","Id":"27e2f1c8-cfe0-4324-88e2-cd0bafeffe1b","VoiceType":"StandardVoice"},{"Name":"Microsoft Server Speech Text to Speech Voice (en-US, GuyNeural)","ShortName":"en-US-GuyNeural","Locale":"en-US","Id":"e0638b39-fbd2-4497-a482-e2f65759412a","VoiceType":"StandardVoice"}]}-->
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" xml:lang="en-US"><voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Good morning! Thank you for calling XYZ Telecommunications. My name is Lisa. How can I assist you today?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Hi Lisa! I'm having some trouble with my internet connection. It keeps cutting out.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Oh no, I'm sorry to hear that! Let's get this sorted out for you. May I have your name and account number to get started?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Sure, my name is Shawn, and my account number is 123456.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Thank you, Shawn. I’ll also need a bit more information to help you better. How long have you been experiencing this issue, and have you made any recent changes to your equipment or service plan?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">It started yesterday, and no, I haven’t changed anything recently.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Got it. Let’s start with some basic troubleshooting steps. Could you please restart your modem and router? I'll hold the line while you do that.</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Alright, give me a minute. <break time="2000ms" /> Okay, I’ve restarted them.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Great. Now, can you check if all the lights on the modem and router are on and green?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Yes, they are.</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">Perfect. Are you still experiencing the connectivity issue on all your devices?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">No, it seems to be working fine now!</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">That’s wonderful to hear! If you encounter any more issues, don’t hesitate to call us back. Is there anything else I can help you with today?</voice>
+<voice name="en-US-GuyNeural" tailingsilence-exact="1500ms">Nope, that’s all. Thanks, Lisa!</voice>
+<voice name="en-US-AriaNeural" tailingsilence-exact="1500ms">You’re welcome, Shawn! Have a great day!</voice></speak>

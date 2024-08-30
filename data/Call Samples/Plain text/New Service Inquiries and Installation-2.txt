@@ -1,0 +1,19 @@
+ Good morning, you’ve reached XYZ Telecom. My name is Lisa. How can I assist you today?  
+ I’ve been trying to set up new internet service for days, and I keep getting the runaround!  
+ I’m really sorry to hear that, and I can understand how frustrating that must be. Let’s get this sorted out for you right away. May I have your name and contact information, please?  
+ It’s Jane Smith, 555-987-6543.  
+ Thank you, Jane. And what is the address where you’d like to set up the new service?  
+ 456 Oak Avenue.  
+ Got it. Can you tell me a little more about the services you’re looking for? Are you interested in internet, phone, TV, or a combination?  
+ Just internet, and I need it fast!  
+ Absolutely, Jane. We have several high-speed internet plans available. Let me check if we can provide service to your address.  
+ Fine.  
+ I’ve confirmed that we can offer high-speed internet at 456 Oak Avenue. We have a plan offering speeds up to 500 Mbps for $50 per month. Would that work for you?  
+ Yes, that’s fine. Just get it done.  
+ Understood. I’ll process your order now. Do you need any additional equipment, or are you all set?  
+ I have everything I need. Just get someone out here to install it.  
+ I’ll schedule the earliest available installation appointment. How does tomorrow between 2 PM and 4 PM sound?  
+ Finally! That works.  
+ Great, Jane. Your installation is scheduled for tomorrow between 2 PM and 4 PM. You’ll receive a confirmation email shortly. Is there anything else I can help you with?  
+ No, just make sure they show up.  
+ We’ll be there, Jane. Thank you for choosing XYZ Telecom, and I apologize for any inconvenience you’ve experienced. Have a better day! 

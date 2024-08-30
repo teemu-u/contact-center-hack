@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:09,312
+Good morning! Thank you for calling our support center. My name is Lisa. How can I help you today?
+
+2
+00:00:09,312 --> 00:00:19,162
+Hi Lisa! My name is John and I’ve been having some trouble with my internet connection for the past few hours. Can you help me out?
+
+3
+00:00:19,162 --> 00:00:31,887
+Of course, John! I’m really sorry for the inconvenience. Let’s get this sorted out for you. Can I please have your account number or service ID to get started?
+
+4
+00:00:31,887 --> 00:00:36,275
+Sure, it’s 12345678.
+
+5
+00:00:36,275 --> 00:00:44,687
+Great, thank you. Can you describe the issue you’re experiencing? Are there any error messages?
+
+6
+00:00:44,687 --> 00:00:51,537
+The internet just keeps dropping every few minutes. No specific error messages though.
+
+7
+00:00:51,537 --> 00:00:56,850
+I see. How long has this been happening, John?
+
+8
+00:00:56,850 --> 00:00:59,762
+It started this morning.
+
+9
+00:00:59,762 --> 00:01:06,837
+Thanks for that information. Let me quickly check if there is a known outage in your area.
+
+10
+00:01:06,837 --> 00:01:17,212
+It looks like there aren’t any reported outages. Let’s try some troubleshooting steps. Can you first try restarting your modem and router?
+
+11
+00:01:17,212 --> 00:01:20,137
+Sure, one second.
+
+12
+00:01:20,137 --> 00:01:23,425
+Okay, I’ve restarted them.
+
+13
+00:01:23,425 --> 00:01:29,437
+Perfect. Are all the cables securely connected and undamaged?
+
+14
+00:01:29,437 --> 00:01:32,650
+Yes, everything looks fine.
+
+15
+00:01:32,650 --> 00:01:39,762
+Alright, let’s check the lights on your modem/router. Are they all on and stable?
+
+16
+00:01:39,762 --> 00:01:43,124
+Yes, they’re all on and stable.
+
+17
+00:01:43,124 --> 00:01:50,924
+Great! Can you check if other devices in your house are also experiencing connectivity issues?
+
+18
+00:01:50,924 --> 00:01:55,074
+Yes, they all seem to be having the same problem.
+
+19
+00:01:55,074 --> 00:02:03,724
+Thank you for checking that. Since the basic steps haven’t resolved the issue, I’ll perform remote diagnostics.
+
+20
+00:02:03,724 --> 00:02:19,962
+It appears there’s an issue on our end. I’ll escalate this to our technical team. Here’s your trouble ticket number, 987654321. We’ll work on resolving this and provide an update soon.
+
+21
+00:02:19,962 --> 00:02:25,011
+Thank you, Lisa. You’ve been really helpful!
+
+22
+00:02:25,011 --> 00:02:33,136
+My pleasure, John. We’ll get this fixed as soon as possible. Have a wonderful day!
+

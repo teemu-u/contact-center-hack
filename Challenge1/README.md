@@ -3,6 +3,17 @@
 ## Introduction
 Your goal in this challenge is to create the services necessary to conduct this hackathon. You will deploy the required resources in Azure, including the Azure AI services that will be used in the subsequent challenges. By completing this challenge, you will set up the foundation for the rest of the hackathon.
 
+## Introduction to the services
+
+### ![Azure AI Search](./images/10044-icon-service-Cognitive-Search.svg) Azure AI Search
+Azure AI Search (formerly known as "Azure Cognitive Search") is a platform that provides secure information retrieval at scale over user-owned content in traditional and generative AI search applications. It supports full-text and vector search scenarios and includes optional integrated AI to extract more text and structure from raw content. Azure AI Search provides a dedicated search engine and persistent storage of your searchable content. It also includes optional, integrated AI to extract more text and structure from raw content, and to chunk and vectorize content for vector search.
+
+### ![Azure Cosmos DB](./images/10121-icon-service-Azure-Cosmos-DB.svg) Azure Cosmos DB
+Azure Cosmos DB is a globally distributed, multi-model database service provided by Microsoft Azure. It is designed to provide low latency, elastic scalability of throughput, well-defined semantics for data consistency, and high availability. Azure Cosmos DB supports multiple data models including key-value, documents, graphs, and columnar. It is a good choice for any serverless application that needs low order-of-millisecond response times and needs to scale rapidly and globally.
+
+### ![Azure AI Studio](./images/03513-icon-service-AI-Studio.svg) Azure AI Studio
+Azure AI Studio is a comprehensive toolchain that provides a unified experience for AI developers and data scientists to build, evaluate, and deploy AI models through a web portal, SDK, or CLI. It allows users to deploy serverless models and get started quickly with ready-to-use APIs without the need to provision GPUs. AI Studio provides access to collaborative, comprehensive tooling to support the development lifecycle and differentiate your apps, including Azure AI Search, fine-tuning, prompt flow, open frameworks, tracing and debugging, and evaluations. It also offers responsible AI tools and practices to design and safeguard applications, as well as enterprise-grade production at scale to deploy AI innovations to Azure's managed infrastructure with continuous monitoring and governance across environments.
+
 ## Resource Deployment Guide
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group. In this guide, the resource group is named `rg-genai-callcenter`. At this point, it should be empty.

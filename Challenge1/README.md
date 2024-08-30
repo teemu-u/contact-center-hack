@@ -88,3 +88,9 @@ Azure AI Studio is a comprehensive toolchain that provides a unified experience 
 24. Give your project a name and click on `Create a project`.
 ![Create project 2](./images/aihub_createproject2.png)
 25. Wait for the project to be created.
+
+## Conclusion
+Add things here.
+
+## Learning Material
+Add things here.

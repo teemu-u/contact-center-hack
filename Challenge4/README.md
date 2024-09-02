@@ -78,6 +78,12 @@
 ![app1](./images/app1.png)
 5. The application will start transcribing the call and providing suggestions to the agent in real time. Every time the application detects that a complete phrase was spoken, it will call the Prompt Flow endpoint and update all the info to the agent.
 ![app2](./images/app2.png)
+6. After the transcription is finished, the application will save the call information in the Cosmos DB database.
+7. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
+8. Navigate to your resource group.
+9. Select the `Azure Cosmos DB` resource.
+10. Navigate to the resource page and, from the left tabs, select `Data Explorer`.
+11. You should see your database and container created in [Challenge 1](../Challenge1/README.md).
 
 ## Conclusion
 Add things here.

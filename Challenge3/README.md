@@ -242,10 +242,12 @@ You should return your answer in the following JSON schema:
 ## Guide: Test Prompt Flow
 1. In the list of nodes, navigate to the *Inputs* section at the very top.
 2. In the `transcript` field, paste the following text into the `Value` field:
-    > Good morning! Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
-    > Hi! I’m interested in setting up a new internet and TV service at my home. Can you help me with that?  
-    > Absolutely, I'd be delighted to help you with that. May I please have your name and contact information to get started?  
-    > Sure, my name is John Doe, and my number is 555-123-4567.  
+    ```
+    Good morning! Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+    Hi! I’m interested in setting up a new internet and TV service at my home. Can you help me with that?  
+    Absolutely, I'd be delighted to help you with that. May I please have your name and contact information to get started?  
+    Sure, my name is John Doe, and my number is 555-123-4567. 
+    ```
 3. Click on the `Run` button at the top right corner of the page.
 4. After it finishes, you will see the output of the flow in the `Output` section in each individual node or, at the top of the page, in the `View Outpus`.
 ![output1](./images/output1.png)
@@ -272,10 +274,12 @@ You should return your answer in the following JSON schema:
 13. Double check that your `Traffic Allocation` is set to 100% for this deployment. You can create multiple deployments in the same endpoint (to A/B test new developments in PromptFlow, for example) and would need to select the traffic allocation for each one.
 14. Select the `Test` tab.
 15. Provide the same transcript used in the development of the flow and click `Run`.
-    > Good morning! Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
-    > Hi! I’m interested in setting up a new internet and TV service at my home. Can you help me with that?  
-    > Absolutely, I'd be delighted to help you with that. May I please have your name and contact information to get started?  
-    > Sure, my name is John Doe, and my number is 555-123-4567.  
+    ```
+    Good morning! Thank you for calling XYZ Telecom. My name is Lisa. How can I assist you today?  
+    Hi! I’m interested in setting up a new internet and TV service at my home. Can you help me with that?  
+    Absolutely, I'd be delighted to help you with that. May I please have your name and contact information to get started?  
+    Sure, my name is John Doe, and my number is 555-123-4567.
+    ```
 16. The output will be available in the right pane of the page.
 ![endpointest](./images/endpointest.png)
 17. You can now consume this endpoint in your application. The `Consume` tab will provide you with the necessary information to do so with sample code.

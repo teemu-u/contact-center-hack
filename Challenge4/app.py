@@ -33,7 +33,7 @@ def init_session_state(call_id:str):
     call_context['sellingOpportunity'] = None
     call_context['sentiment'] = None
     call_context['all_recognized'] = []
-    call_context['audio_path'] = os.path.join("data","Call Samples","Audio",call_id+".wav")
+    call_context['audio_path'] = os.path.join("Call Samples","Audio",call_id+".wav")
     call_context['printable_text'] = ""
     call_context['call_uuid'] = str(uuid.uuid4())
 
@@ -254,7 +254,7 @@ cosmos_database = cosmos_client.get_database_client(COSMOSDB_DATABASE_NAME)
 cosmos_container = cosmos_database.get_container_client(COSMOSDB_CONTAINER_NAME)
 
 ### Obtain list of calls
-calls = os.listdir(os.path.join("data","Call Samples","Audio"))
+calls = os.listdir(os.path.join("Call Samples","Audio"))
 calls = [ call.replace('.wav','') for call in calls ]
 calls.sort()
 

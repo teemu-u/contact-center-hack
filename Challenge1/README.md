@@ -38,6 +38,13 @@ Azure AI Studio is a comprehensive toolchain that provides a unified experience 
     * Click on `Review + Create` and then `Create`.
     ![Cosmos DB](./images/cosmosdb.png)
     * Wait for the deployment to complete.
+    * Navigate to the resource page and, from the left tabs, select `Data Explorer`.
+    * Click on `New Container`.
+    * Fill the `Database id` with *callcenter*.
+    * Fill the `Container id` with *calls*.
+    * Fill the `Partition key` with *id*.
+    * At the bottom of the page, click `Ok`.
+    ![cosmoscontainer](./images/cosmoscontainer.png)
 6. Navigate to your resource group.
 7. Let's create our **Azure AI Studio**.
     * Click on the `Create` button.

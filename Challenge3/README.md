@@ -2,17 +2,17 @@
 
 # Challenge 3 - Create your first LLM-Powered Endpoint
 
-**Expected Duration:** 2h
+**Expected Duration:** 120 minutes
 
 ## Introduction
 
 Imagine that you are a call center manager at a telecommunications company. Your call center agents handle a high volume of customer inquiries daily, ranging from service requests to technical issues. To improve the efficiency and effectiveness of your call center operations, you decide to leverage AI technologies to provide real-time support to your agents during customer calls.
 
 What sort of information would be valuable to your agents during a call? Here are some examples:
-    - Relevant questions to ask customers based on the conversation. Instant access to possible actions to be taken, derived from the conversation and available SOPs can quickly guide the agent to the next best step, enhancing the customer experience and the speed of response.
-    - Sentiment of the customer. Is the customer happy, neutral, or upset? Does the agent need to adjust their tone or approach?
-    - Is there any possible upselling opportunity that the agent might have missed? We can use examples from other interactions to enhance the LLMs capabilities to identify these opportunities and help the agent to identify them.
-    - Has the agent properly identified the customer? Indentification is crucial to avoid fraud and, as such, it is the task of the agent to always identify the person calling using a set of predefined information.
+* Relevant questions to ask customers based on the conversation. Instant access to possible actions to be taken, derived from the conversation and available SOPs can quickly guide the agent to the next best step, enhancing the customer experience and the speed of response.
+* Sentiment of the customer. Is the customer happy, neutral, or upset? Does the agent need to adjust their tone or approach?
+* Is there any possible upselling opportunity that the agent might have missed? We can use examples from other interactions to enhance the LLMs capabilities to identify these opportunities and help the agent to identify them.
+* Has the agent properly identified the customer? Indentification is crucial to avoid fraud and, as such, it is the task of the agent to always identify the person calling using a set of predefined information.
 
 To this extent, our goal in this Challenge is to create a Prompt Flow that integrates Large Language Models (LLMs) to generate questions, search for information, and provide real-time insights to call center agents during customer calls. The flow will be deployed as an endpoint that can be consumed by your call center application to enhance the customer service experience.
 

@@ -2,7 +2,7 @@
 
 # Challenge 2 - Incorporating your data with LLM's
 
-**Expected Duration:** 2h
+**Expected Duration:** 120 minutes
 
 ## Introduction
 Your goal in this challenge is to get introduced to the concept of the Retrieval Augmented Generation (RAG) pattern and how it can help us solve problems with large language models (LLMs). You will learn how to incorporate your data with LLMs and how to use the Azure AI services to build a call center chat assistant.

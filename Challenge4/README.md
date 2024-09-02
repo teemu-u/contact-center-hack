@@ -2,7 +2,7 @@
 
 # Challenge 4 - Real-time call transcription and agent assistance
 
-**Expected Duration:** 2h
+**Expected Duration:** 120 minutes
 
 ## Introduction
 

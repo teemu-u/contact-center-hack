@@ -2,7 +2,7 @@
 
 # Challenge 1 - Resources Deployment
 
-**Expected Duration:** 1h
+**Expected Duration:** 90 minutes
 
 ## Introduction
 Your goal in this challenge is to create the services necessary to conduct this hackathon. You will deploy the required resources in Azure, including the Azure AI services that will be used in the subsequent challenges. By completing this challenge, you will set up the foundation for the rest of the hackathon.

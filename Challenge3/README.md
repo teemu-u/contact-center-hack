@@ -4,6 +4,8 @@
 
 **Expected Duration:** 2h
 
+## Introduction
+
 Imagine that you are a call center manager at a telecommunications company. Your call center agents handle a high volume of customer inquiries daily, ranging from service requests to technical issues. To improve the efficiency and effectiveness of your call center operations, you decide to leverage AI technologies to provide real-time support to your agents during customer calls.
 
 What sort of information would be valuable to your agents during a call? Here are some examples:

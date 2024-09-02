@@ -39,15 +39,12 @@ def init_session_state(call_id:str):
 
 def handle_printable_text(evt):
     """
-    Handle the printable text event.
+    Handle the printable text event. This object is used to display the transcript in the application text box.
 
     Args:
         evt (Event): The event object containing the result text.
 
     Returns:
-        None
-
-    Raises:
         None
     """
     if evt.result.text != "":
@@ -56,7 +53,7 @@ def handle_printable_text(evt):
 
 def register_transcript(evt):
     """
-    Register the transcript from an event.
+    Register the transcript from an event. Every new phrase is appended to the list of recognized phrases as a new element of the array.
 
     Args:
         evt (Event): The event containing the transcript.
@@ -68,6 +65,15 @@ def register_transcript(evt):
         call_context['all_recognized'].append(evt.result.text)
 
 def customer_identification(customer_ident):
+    """
+    Everytime we have a new result from the Prompt Flow endpoint, we constrcut the customer identification text to be displayed in the application.
+
+    Args:
+        customer_ident (dict): The dictionary containing the information about the customer identification. It is returned by the Prompt Flow endpoint.
+
+    Returns:
+        None
+    """
     if customer_ident['identified']:
         ids = list({ele for ele in customer_ident if customer_ident[ele]})
         all_text = ""
@@ -83,8 +89,10 @@ def call_analysis(evt):
     """
     Perform call analysis on the event.
 
+    This function will take the event containing the transcript and send it to the Prompt Flow endpoint for analysis. The response will be used to update the call context variables.
+
     Args:
-        evt (Event): The event containing the transcript.
+        evt (Event): The event containing the new phrase. Not specifically used in this function.
 
     Returns:
         None
@@ -99,6 +107,7 @@ def call_analysis(evt):
         response = urllib.request.urlopen(req)
         response_data = json.loads(response.read().decode('utf-8'))
 
+        ## Update the call context variables to be displayed in the application
         call_context['nextBestAction'].append(response_data.get('nextBestAction'))
         call_context['sellingOpportunity'] = response_data.get('sellingOpportunity')
         call_context['sentiment'] = response_data.get('sentiment')
@@ -187,13 +196,13 @@ def analyseCallFile(filename):
     # # Call analysis
     speech_recognizer.recognized.connect(register_transcript) # Saves the entire transcription
     speech_recognizer.recognizing.connect(handle_printable_text) # Saves the transcription to be displayed
-    speech_recognizer.recognized.connect(call_analysis) # Analyzes the call
+    speech_recognizer.recognized.connect(call_analysis) # Analyzes the call by calling the Prompt Flow endpoint
 
     # Start continuous speech recognition
     speech_recognizer.start_continuous_recognition()
     placeholder = st.empty()
     while not done:
-        time.sleep(.5)
+        time.sleep(.5) # Update the UI elements every 0.5 seconds
         with placeholder.container():
             col1, col2 = st.columns(2, gap="large")
             col1.text_area(label="Live Transcription", value=call_context['printable_text'], height=1000, key=random() )
@@ -240,7 +249,7 @@ assert COSMOSDB_CONTAINER_NAME, "Please specify the container name for CosmosDB.
 
 st.set_page_config(
     page_title="Agent Assistance",
-    page_icon="👋",
+    page_icon=":robot_face:",
     layout="wide"
 )
 

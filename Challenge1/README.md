@@ -102,8 +102,8 @@ Azure AI Studio is a comprehensive toolchain that provides a unified experience 
 By reaching this section you should have every resource necessary to conduct the hackathon. You have deployed an Azure AI Search service, an Azure Cosmos DB account, and an Azure AI Studio. In the next challenges, you will use these services to build a call center application.
 
 ## Learning Material
-![Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
-![Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction)
-![Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio)
-![Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
-![Automate deployment of resources using Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep)
+- [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
+- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction)
+- [Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio)
+- [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
+- [Automate deployment of resources using Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep)

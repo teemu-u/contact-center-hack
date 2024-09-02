@@ -1,3 +1,5 @@
+![3](https://github.com/user-attachments/assets/dad008f7-0112-45a9-baa0-a2461a67130b)
+
 # Challenge 1 - Resources Deployment
 
 **Expected Duration:** 1h
@@ -97,7 +99,11 @@ Azure AI Studio is a comprehensive toolchain that provides a unified experience 
 25. Wait for the project to be created.
 
 ## Conclusion
-Add things here.
+By reaching this section you should have every resource necessary to conduct the hackathon. You have deployed an Azure AI Search service, an Azure Cosmos DB account, and an Azure AI Studio. In the next challenges, you will use these services to build a call center application.
 
 ## Learning Material
-Add things here.
+![Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
+![Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction)
+![Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio)
+![Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
+![Automate deployment of resources using Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep)

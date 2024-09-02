@@ -1,3 +1,5 @@
+![3](https://github.com/user-attachments/assets/dad008f7-0112-45a9-baa0-a2461a67130b)
+
 # Challenge 4 - Real-time call transcription and agent assistance
 
 **Expected Duration:** 2h

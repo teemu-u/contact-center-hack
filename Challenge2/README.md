@@ -1,3 +1,5 @@
+![3](https://github.com/user-attachments/assets/dad008f7-0112-45a9-baa0-a2461a67130b)
+
 # Challenge 2 - Incorporating your data with LLM's
 
 **Expected Duration:** 2h
@@ -11,7 +13,11 @@ Your goal in this challenge is to get introduced to the concept of the Retrieval
 
 ## Our scenario
 
-**TO BE DONE**
+By applying the RAG pattern, our intention is to use the Standard Operation Procedures available to Call Center Agents to help them solve customer issues. We will use the Azure AI Studio to create an index with the SOPs and then use the LLM to generate responses based on the information present in the SOPs.
+
+For this, sample Standard Operating Procedures were created using Generative AI and are available in the [SOPs folder](./SOPs). These SOPs will be used to create an index in the Azure AI Studio.
+
+We will use Azure AI Studio to create an index with the SOPs and then use the LLM to generate responses based on the information present in the SOPs.
 
 ## Guide: Build your Vector Index to be used in the RAG pattern
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
@@ -111,7 +117,12 @@ Your goal in this challenge is to get introduced to the concept of the Retrieval
 ![agentassistant](./images/agentassistant.png)
 
 ## Conclusion
-Add things here.
+In this challenge, you learned how to incorporate your data with LLMs and how to use the Azure AI services to build a call center chat assistant. You created an index with the SOPs and used the LLM to generate responses based on the information present in the SOPs. You also learned how to guide the model to behave as expected by crafting a proper *System Message*. The concepts learned in this challenge are reproducible to other scenarios where you need to use LLMs to assist in the decision-making process.
 
 ## Learning Material
-Add things here.
+![RAG Overview](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
+![Vector Search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview)
+![Understand embeddings in Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings)
+![System message framework and template recommendations](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/system-message)
+![Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions)
+![GPT 4o](https://openai.com/index/hello-gpt-4o/)

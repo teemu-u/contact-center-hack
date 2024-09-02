@@ -1,4 +1,4 @@
-# Challenge 1 - Incorporating your data with LLM's
+# Challenge 2 - Incorporating your data with LLM's
 
 **Expected Duration:** 2h
 

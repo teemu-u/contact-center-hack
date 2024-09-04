@@ -6,11 +6,17 @@
 
 ## Introduction
 
-**TO BE DONE**
+In the previous Challenge you created a Prompt Flow endpoint which can be used in an application to execute the flow defined in the previous challenges. In this challenge, you will create a real-time call transcription application that will assist the agent during the call. The application will transcribe the call in real time and provide suggestions to the agent based on the conversation and also save the call information in a Cosmos DB database.
 
-## Our scenario
+To this extent, we will use a pre-recorded call sample and transcribe it in real time. The application will use the Azure Speech Service to transcribe the call in real-time and our application will call the Prompt Flow endpoint each time a new sentence has been spoken to provide suggestions to the agent.
 
-**TO BE DONE**
+![arch](./images/arch.png)
+
+In a real-world scenario, you would use Azure AI Speech to transcribe the incoming call in real-time and not use pre-recorded calls. However, for the purpose of this challenge, we will use pre-recorded calls to simulate the real-time transcription.
+
+The sample calls have been recorded and are available in the [Call Samples/Audio](<../Challenge4/Call Samples/Audio/>) folder. To generate the calls, the SOPs defined in the previous challenges were provided to an LLM which generated 3 transcripts per type of SOP and, using Azure AI Speech, the transcripts were converted to audio files.
+
+You will be able to test the application with all of the Audio Samples or, if available to you, provide your own by including them in the [Call Samples](<../Challenge4/Call Samples/Audio/>) folder.
 
 ## Install the required programs
 ### Visual Studio Code
@@ -28,6 +34,11 @@
     - It is usually pre-installed. Check version with `python3 --version`.
 - Mac
     - `brew install python3`
+
+## Guide: Install Azure Web App Service extension
+1. Open Visual Studio Code.
+2. Click on the Extensions icon on the left sidebar.
+3. Search for `Azure Web App Service` and click on `Install`.
 
 ## Guide: Setup local environment
 1. Clone the repository to your local machine.
@@ -65,10 +76,6 @@
     * Fill in the `COSMOSDB_DATABASE_NAME` and `COSMOSDB_CONTAINER_NAME` fields in the `config.env` file with the values specified in [Challenge 1](../Challenge1/README.md). If you followed the guide, the values should be `callcenter` and `calls`, respectively.
     ![config](./images/config.png)
 
-## Guide: Explain the app
-
-**TO BE DONE**
-
 ## Guide: Run the app
 1. Navigate to the `Challenge4` folder.
 2. Open a terminal window and run the following command: `streamlit run app.py`
@@ -78,15 +85,18 @@
 ![app1](./images/app1.png)
 5. The application will start transcribing the call and providing suggestions to the agent in real time. Every time the application detects that a complete phrase was spoken, it will call the Prompt Flow endpoint and update all the info to the agent.
 ![app2](./images/app2.png)
+6. Notice that in the terminal where streamlit was executed you will see the results of the transcription provided by Azure AI Speech in real-time, including each new word that it is able to capture.
 6. After the transcription is finished, the application will save the call information in the Cosmos DB database.
 7. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 8. Navigate to your resource group.
 9. Select the `Azure Cosmos DB` resource.
 10. Navigate to the resource page and, from the left tabs, select `Data Explorer`.
 11. You should see your database and container created in [Challenge 1](../Challenge1/README.md).
+12. With the transcriptions available in the `calls` container, you can later use the data to analyze the calls and evaluate the performance of your call center operations. You can find an example of this [here](https://github.com/microsoft/Customer-Service-Conversational-Insights-with-Azure-OpenAI-Services).
 
 ## Conclusion
-Add things here.
+In this challenge, you created a real-time call transcription application that assists the agent during the call. The application transcribes the call in real-time and provides suggestions to the agent based on the conversation. The application also saves the call information in a Cosmos DB database.
 
 ## Learning Material
-Add things here.
+- [Customer Service Conversational Insights with Azure OpenAI Services](https://github.com/microsoft/Customer-Service-Conversational-Insights-with-Azure-OpenAI-Services)
+- [Streamlit](https://streamlit.io/)

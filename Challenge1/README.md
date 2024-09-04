@@ -18,6 +18,9 @@ Azure Cosmos DB is a globally distributed, multi-model database service provided
 ### ![Azure AI Studio](./images/03513-icon-service-AI-Studio.svg) Azure AI Studio
 Azure AI Studio is a comprehensive toolchain that provides a unified experience for AI developers and data scientists to build, evaluate, and deploy AI models through a web portal, SDK, or CLI. It allows users to deploy serverless models and get started quickly with ready-to-use APIs without the need to provision GPUs. AI Studio provides access to collaborative, comprehensive tooling to support the development lifecycle and differentiate your apps, including Azure AI Search, fine-tuning, prompt flow, open frameworks, tracing and debugging, and evaluations. It also offers responsible AI tools and practices to design and safeguard applications, as well as enterprise-grade production at scale to deploy AI innovations to Azure's managed infrastructure with continuous monitoring and governance across environments.
 
+### ![Azure Web App](./images/10035-icon-service-App-Services.svg) Azure Web App
+Azure Web App is a fully managed platform for building, deploying, and scaling web apps. It supports multiple programming languages and frameworks, including .NET, Java, Node.js, Python, and PHP. Azure Web App provides built-in auto-scaling and load balancing, along with a robust set of DevOps capabilities such as continuous deployment from GitHub, Azure DevOps, or any Git repository. It also offers integrated monitoring and diagnostics to ensure high availability and performance. With Azure Web App, you can quickly build and deploy mission-critical web applications that meet rigorous compliance requirements.
+
 ## Resource Deployment Guide
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group. In this guide, the resource group is named `rg-genai-callcenter`. At this point, it should be empty.
@@ -56,10 +59,22 @@ Azure AI Studio is a comprehensive toolchain that provides a unified experience 
     ![AI Hub](./images/aihub.png)
     * Wait for the deployment to complete.
 8. Navigate to your resource group.
-9. You should now have all the services deployed in your resource group:
+9. Let's create our **Azure Web App**.
+    * Click on the `Create` button.
+    * Search for `Azure Web App` and click `Create`.
+    * Fill the *Name* field and select the *Region*. Be sure to use the same *Location* for all services wherever possible.
+    * In the *Publish* field, select `Code`.
+    * In the *Runtime stack* field, select `Python 3.12`.
+    * In the *Pricing Plan* field, select `Basic B1`.
+    * Click on `Review + Create` and then `Create`.
+    * Wait for the deployment to complete.
+10. Navigate to your resource group.
+11. You should now have all the services deployed in your resource group:
     * An Azure AI Search Service
     * An Azure Cosmos DB account
     * An Azure AI Studio
+    * An Azure App Service
+    * An Azure App Service Plan
     * An Azure Storage Account (deployed automatically by AI Studio)
     * An Azure Key Vault (deployed automatically by AI Studio)
     * An Azure AI Services (deployed automatically by AI Studio)

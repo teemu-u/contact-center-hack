@@ -15,12 +15,13 @@ from azure.cosmos import CosmosClient
 #################################################################################
 def allowSelfSignedHttps(allowed):
     # bypass the server certificate verification on client side
+    # Used to bypass the SSL certificate verification for the Prompt Flow endpoint
     if allowed and not os.environ.get('PYTHONHTTPSVERIFY', '') and getattr(ssl, '_create_unverified_context', None):
         ssl._create_default_https_context = ssl._create_unverified_context
 
 def init_session_state(call_id:str):
     """
-    Initialize session state for the app
+    Initialize session state for the app. This will reset all of the call context variables to their initial state.
     
     Args:
     call_id : str : the call_id selected by the user
@@ -154,17 +155,27 @@ def analyseCallFile(filename):
     Returns:
         None
     """
+    # setup Azure AI Speech SDK configuration
     speech_config = speechsdk.SpeechConfig(subscription=AZURE_AI_SPEECH_KEY, region=AZURE_AI_SPEECH_REGION)
-    audio_config = speechsdk.audio.AudioConfig(filename=filename)
 
+    # setup audio configuration. In here, we will use a .wav file as the input. You can also use a microphone as input.
+    audio_config = speechsdk.audio.AudioConfig(filename=filename)
     auto_detect_source_language_config = speechsdk.languageconfig.AutoDetectSourceLanguageConfig(languages=["en-US"])
+
+    # We configure the SDK to provide us with continuous regognition. This means that the SDK will keep listening to the audio input and provide us with the transcription as it comes in.
     speech_config.set_property(property_id=speechsdk.PropertyId.SpeechServiceConnection_LanguageIdMode, value='Continuous')
+    
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, 
                                                    audio_config=audio_config,
                                                    auto_detect_source_language_config=auto_detect_source_language_config
                                                    )
 
-    done = False
+
+    # The SDK provides us with callbacks that we can use to handle the events fired by the recognizer.
+    # We will use these callbacks to update the UI elements with the transcription and the analysis results.
+    # We will also use these callbacks to save the transcript and the analysis results to CosmosDB.
+
+    done = False # initialize the variable to start the transcription
 
     def stop_cb(evt):
         """
@@ -183,7 +194,7 @@ def analyseCallFile(filename):
 
     # Connect callbacks to the events fired by the speech recognizer
     if debug:
-        # speech_recognizer.recognizing.connect(lambda evt: print('RECOGNIZING: {}'.format(evt))) # gets new texts as they come in
+        speech_recognizer.recognizing.connect(lambda evt: print('RECOGNIZING: {}'.format(evt))) # gets new texts as they come in
         speech_recognizer.recognized.connect(lambda evt: print('RECOGNIZED: {}'.format(evt))) # after a phrase being spoken, this event is fired
         speech_recognizer.session_started.connect(lambda evt: print('SESSION STARTED: {}'.format(evt))) # when transcription starts
         speech_recognizer.session_stopped.connect(lambda evt: print('SESSION STOPPED {}'.format(evt))) # when transcription ends
@@ -193,14 +204,14 @@ def analyseCallFile(filename):
     speech_recognizer.session_stopped.connect(stop_cb)
     speech_recognizer.canceled.connect(stop_cb)
 
-    # # Call analysis
-    speech_recognizer.recognized.connect(register_transcript) # Saves the entire transcription
-    speech_recognizer.recognizing.connect(handle_printable_text) # Saves the transcription to be displayed
+    # Call analysis
+    speech_recognizer.recognized.connect(register_transcript) # Saves the transcription
+    speech_recognizer.recognizing.connect(handle_printable_text) # Saves the transcription to be displayed in the frontend
     speech_recognizer.recognized.connect(call_analysis) # Analyzes the call by calling the Prompt Flow endpoint
 
     # Start continuous speech recognition
     speech_recognizer.start_continuous_recognition()
-    placeholder = st.empty()
+    placeholder = st.empty() # initialize the placeholder to display the UI elements
     while not done:
         time.sleep(.5) # Update the UI elements every 0.5 seconds
         with placeholder.container():
@@ -215,18 +226,21 @@ def analyseCallFile(filename):
                 col2.metric(label="Customer identified?", value=None)
                 col2.text_area(label="Customer Indentification", value=None, key=random())
             col2.text_area(label="Agent Next Best Action", value=call_context['nextBestAction'][-1], height=200, key=random())
-            col2.expander(label="History of Next Best Actions",expanded=False).write(call_context['nextBestAction'][-1:0:-1])
+            col2.expander(label="History of Next Best Actions",expanded=True).write(call_context['nextBestAction'][-1:0:-1])
 
 #################################################################################
 # END OF HELPER FUNCTIONS
 #################################################################################
 
-# Set environment
+##### Set environment
+# Load the environment variables from the 'config.env' file
 load_env = load_dotenv(find_dotenv('config.env'))
 call_context = {}
 debug = True
 
-##### Check if the environment variables are loaded successfully
+##### Validate environment
+
+# Check if the environment variables are loaded successfully
 assert load_env, "Error loading environment variables. Make sure that you have the 'config.env' file in the root directory."
 
 AZURE_AI_SPEECH_KEY = os.environ["SPEECH_KEY"]
@@ -247,27 +261,27 @@ assert COSMOSDB_CONNECTION_KEY, "Please specify the connection key for CosmosDB.
 assert COSMOSDB_DATABASE_NAME, "Please specify the database name for CosmosDB."
 assert COSMOSDB_CONTAINER_NAME, "Please specify the container name for CosmosDB."
 
+##### Initialize CosmosDB client
+# Create a Cosmos DB client
+cosmos_client = CosmosClient(COSMOSDB_CONNECTION_URL, credential=COSMOSDB_CONNECTION_KEY)
+# Get a reference to the database
+cosmos_database = cosmos_client.get_database_client(COSMOSDB_DATABASE_NAME)
+# Get a reference to the container
+cosmos_container = cosmos_database.get_container_client(COSMOSDB_CONTAINER_NAME)
+
+##### Frontend UI
+# Obtain list of calls
+calls = os.listdir(os.path.join("Call Samples","Audio"))
+calls = [ call.replace('.wav','') for call in calls ]
+calls.sort()
+
+# Start page definition
 st.set_page_config(
     page_title="Agent Assistance",
     page_icon=":robot_face:",
     layout="wide"
 )
 
-### Initialize CosmosDB client
-# Create a Cosmos DB client
-cosmos_client = CosmosClient(COSMOSDB_CONNECTION_URL, credential=COSMOSDB_CONNECTION_KEY)
-# Get a reference to the database
-cosmos_database = cosmos_client.get_database_client(COSMOSDB_DATABASE_NAME)
-
-# Get a reference to the container
-cosmos_container = cosmos_database.get_container_client(COSMOSDB_CONTAINER_NAME)
-
-### Obtain list of calls
-calls = os.listdir(os.path.join("Call Samples","Audio"))
-calls = [ call.replace('.wav','') for call in calls ]
-calls.sort()
-
-### Start page definition
 call_id =st.selectbox("Select a call", calls)
 if st.button("Start"):
     init_session_state(call_id)

@@ -26,7 +26,7 @@ In this challenge, we will deploy our streamlit application to an Azure Web App 
 9. You can find the URL of your application in the `Overview` section, under the `Default domain` field.
 ![url](./images/url.png)
 10. Open the URL in your browser to access the application.
-11. The first time you open your application it may take 1/2 minutes to load. Subsequent loads will be faster.
+11. The first time you open your application it may take a few minutes to load. Subsequent loads will be faster.
 
 ## Conclusion
 In this challenge, you have successfully deployed your Streamlit application to an Azure Web App Service. You can now access your application from anywhere with an internet connection.

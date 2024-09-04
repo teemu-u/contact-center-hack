@@ -165,3 +165,5 @@ config.env
 
 # Local test files
 system_message.txt
+.vscode/
+.deployment

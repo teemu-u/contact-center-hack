@@ -2,7 +2,7 @@
 
 # Challenge 3 - Create your first LLM-Powered Endpoint
 
-**Expected Duration:** 120 minutes
+**Expected Duration:** 90 minutes
 
 ## Introduction
 

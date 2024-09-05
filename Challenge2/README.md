@@ -9,7 +9,30 @@ Your goal in this challenge is to get introduced to the concept of the Retrieval
 
 ## Introduction to RAG Pattern
 
-**TO BE DONE**
+The Retrieval-Augmented Generation (RAG) pattern is a powerful design that enhances the capabilities of Large Language Models (LLMs). It does so by integrating an external information retrieval system, which allows the LLM to access and incorporate new data beyond its original training set. This results in more informed and contextually relevant responses.
+
+One could describe the RAG pattern as a way of making AI smarter by giving it access to a vast library of information. It's like having a conversation with a well-read friend who can pull in facts and details from a wide array of books and articles they've read.
+
+Here's a simple breakdown of how the RAG pattern works:
+1. **Query Processing**: It starts with a user's question or prompt.
+2. **Information Retrieval**: The system then searches through a database of documents to find relevant information. This is akin to looking up reference materials.
+3. **Response Generation**: The LLM uses this information to craft a response that's not only based on what it knows but also on the newly retrieved data.
+
+For example, if someone asks about the effects of climate change on polar bears, the RAG system would retrieve up-to-date articles or research papers on the topic. Then, the LLM would use that information to generate a comprehensive and current response.
+
+In practice, the RAG pattern can be implemented using various platforms and services. For instance, Microsoft Azure AI offers tools that allow developers to build RAG systems by combining Azure AI Search for data retrieval with Azure OpenAI models for response generation.
+
+![RAG Image](https://learn.microsoft.com/en-us/azure/search/media/retrieval-augmented-generation-overview/architecture-diagram.png)
+
+The beauty of the RAG pattern lies in its flexibility and the enhanced quality of the generated content. It's particularly useful in scenarios where precision and up-to-date information are crucial, such as customer support, research, and educational applications.
+
+Understanding the RAG pattern is a step towards grasping how modern AI can be augmented with additional data sources to provide richer and more accurate interactions. It's a glimpse into the future of AI, where learning models are not just confined to their training data but can dynamically utilize the vast expanse of human knowledge.
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/watch?v=hd-bEUTvLN8&ab_channel=MicrosoftAzure" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 ## Our scenario
 

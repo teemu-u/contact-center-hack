@@ -28,17 +28,41 @@ The beauty of the RAG pattern lies in its flexibility and the enhanced quality o
 
 Understanding the RAG pattern is a step towards grasping how modern AI can be augmented with additional data sources to provide richer and more accurate interactions. It's a glimpse into the future of AI, where learning models are not just confined to their training data but can dynamically utilize the vast expanse of human knowledge.
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=hd-bEUTvLN8&ab_channel=MicrosoftAzure" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+## Introduction to Vector Search
+
+Vector Search is a cutting-edge technology that revolutionizes the way we handle and retrieve information in large datasets. It is an approach in information retrieval that supports indexing and query execution over numeric representations of content, known as vectors (or embeddings). Unlike traditional search methods that rely on keyword matching, Vector Search operates on the principle of semantic similarity. This means that it can identify and retrieve information that is conceptually similar, even if the exact words are not used in the query.
+
+Here's how Vector Search stands out:
+
+1. **Semantic Matching**: It can match based on the conceptual likeness of content, making it possible to find related information that may not share the same terminology.
+
+2. **Multilingual Content**: Vector Search transcends language barriers, allowing for the retrieval of information across different languages by understanding the semantic meaning behind the words.
+
+3. **Multimodal Content**: It can handle multiple types of content, such as text and images, by understanding the underlying concept of the query.
+
+4. **Hybrid Search**: Vector Search can be combined with keyword search to provide a comprehensive search experience, executing both types of queries in parallel and merging the results.
+
+5. **Multilingual Search**: It supports searching in the user's own language, enhancing accessibility and user experience.
+
+6. **Filtered Vector Search**: Users can apply filters to their searches, refining the results based on specific criteria while still leveraging the power of vector similarity.
+
+The implementation of Vector Search involves a few key steps:
+
+- **Embedding Generation**: First, embeddings of the content are generated, which are then indexed.
+- **Index Creation**: A vector index is created and stored in a vector database to organize the embeddings.
+- **Query Execution**: Users questions are converted to vectors and a vector search is performed on the database to retrieve semantically similar results.
+
+![Vector Search](https://learn.microsoft.com/en-us/azure/search/media/vector-search-overview/vector-search-architecture-diagram-3.svg)
+
+Vector Search is particularly useful in scenarios like similarity search, multimodal search, and hybrid search, providing a versatile and powerful tool for various applications, from recommendation systems to advanced research platforms.
+
+Azure AI Search provides developers with the capability to build vector indexes, which are essential for creating sophisticated search experiences.
 
 ## Our scenario
 
 By applying the RAG pattern, our intention is to use the Standard Operation Procedures available to Call Center Agents to help them solve customer issues. We will use the Azure AI Studio to create an index with the SOPs and then use the LLM to generate responses based on the information present in the SOPs.
 
-For this, sample Standard Operating Procedures were created using Generative AI and are available in the [SOPs folder](./SOPs). These SOPs will be used to create an index in the Azure AI Studio.
+For this, sample Standard Operating Procedures were created using Generative AI and are available in the [SOPs folder](./SOPs). These SOPs will be used to create an vector index in the Azure AI Studio.
 
 We will use Azure AI Studio to create an index with the SOPs and then use the LLM to generate responses based on the information present in the SOPs.
 

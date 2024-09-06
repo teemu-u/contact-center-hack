@@ -251,7 +251,7 @@ You should return your answer in the following JSON schema:
     Sure, my name is John Doe, and my number is 555-123-4567. 
     ```
 3. Click on the `Run` button at the top right corner of the page.
-4. After it finishes, you will see the output of the flow in the `Output` section in each individual node or, at the top of the page, in the `View Outpus`.
+4. After it finishes, you will see the output of the flow in the `Output` section in each individual node or, at the top of the page, in the `View Outputs`.
 ![output1](./images/output1.png)
 ![output2](./images/output2.png)
 5. Take your time in exploring each of the Prompt Flow nodes to understand it's purpose and how they are being used to go from the transcript to real-time information which can be useful for the call center agent.

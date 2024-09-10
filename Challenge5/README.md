@@ -28,5 +28,12 @@ In this challenge, we will deploy our streamlit application to an Azure Web App 
 10. Open the URL in your browser to access the application.
 11. The first time you open your application it may take a few minutes to load. Subsequent loads will be faster.
 
+## Guide: Delete your environment
+1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
+2. Navigate to your resource group.
+3. Save all of the artifacts that you want to keep. For example, in your Prompt Flow, you can save the work done in the Prompt Flow page by downloading the files com the `Files` section.
+3. Click `Delete resource group`. Follow the instructions and confirm the deletion.
+4. Your resources will be deleted, along with all the resources within and, you will avoid future charges.
+
 ## Conclusion
 In this challenge, you have successfully deployed your Streamlit application to an Azure Web App Service. You can now access your application from anywhere with an internet connection.

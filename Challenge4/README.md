@@ -8,7 +8,7 @@
 
 In the previous Challenge you created a Prompt Flow endpoint which can be used in an application to execute the flow defined in the previous challenges. In this challenge, you will create a real-time call transcription application that will assist the agent during the call. The application will transcribe the call in real time and provide suggestions to the agent based on the conversation and also save the call information in a Cosmos DB database.
 
-To this extent, we will use a pre-recorded call sample and transcribe it in real time. The application will use the Azure Speech Service to transcribe the call in real-time and our application will call the Prompt Flow endpoint each time a new sentence has been spoken to provide suggestions to the agent.
+To this extent, we will use a pre-recorded call sample and transcribe it in real time. The application will use the Azure Speech Service to transcribe the call in real-time and our application will call the Prompt Flow endpoint each time a new sentence has been spoken to provide suggestions to the agent. After the conversation finishes, the transcription is saved in a Cosmos DB database.
 
 ![arch](./images/arch.png)
 

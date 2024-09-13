@@ -18,12 +18,16 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"ms-azuretools.vscode-azureappservice",
 				"ms-python.python",
 				"benjaminbenais.copilot-theme",
 				//"github.copilot",
 				//"github.copilot-chat",
 				"ms-python.autopep8"
-			]
+			],
+			"settings": {
+				"workbench.colorTheme": "Copilot Theme"	
+			}
 		}
 	}
 

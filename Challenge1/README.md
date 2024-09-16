@@ -24,7 +24,7 @@ Azure Web App is a fully managed platform for building, deploying, and scaling w
 ## Resource Deployment Guide
 Clicking on button bellow will redirect you to the Azure portal to deploy the resources using the [ARM template](../iac) provided in this repository.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffrsl92%2Fgenai_ws_callcenter_operations%2Fts%2Fiac%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffrsl92%2Fgenai_ws_callcenter_operations%2Fts%2FChallenge1%2Fiac%2Fazuredeploy.json)
 
 If you prefer to deploy the resources manually, follow the steps below.
 

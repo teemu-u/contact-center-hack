@@ -330,3 +330,11 @@ resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
     aiCognitiveServices
   ]
 }
+
+/*
+  Return output values
+*/
+
+output cosmosdb_connection_string string = databaseAccount.listConnectionStrings().connectionStrings[0].connectionString
+output cosmosdb_database_name string = databaseName
+output cosmosdb_container_name string = databaseContainerName

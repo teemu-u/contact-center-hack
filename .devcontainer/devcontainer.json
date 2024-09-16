@@ -12,17 +12,17 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt",
+	//"postCreateCommand": "pip3 install --user -r requirements.txt",
 
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				//"github.copilot",
+				//"github.copilot-chat",
 				"ms-azuretools.vscode-azureappservice",
 				"ms-python.python",
 				"benjaminbenais.copilot-theme",
-				//"github.copilot",
-				//"github.copilot-chat",
 				"ms-python.autopep8"
 			],
 			"settings": {

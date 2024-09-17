@@ -28,6 +28,8 @@ In this challenge, we will deploy our streamlit application to an Azure Web App 
 10. Open the URL in your browser to access the application.
 11. The first time you open your application it may take a few minutes to load. Subsequent loads will be faster.
 
+**NOTE:** This application is available to anyone with the URL. Ensure that you do not share the URL with anyone you do not want to have access to the application. In a production scenario, this application would be secured with authentication and authorization. To learn more on this topic, refer to the [Azure App Service Authentication and Authorization](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service?tabs=workforce-configuration) documentation.
+
 ## Guide: Delete your environment
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group.

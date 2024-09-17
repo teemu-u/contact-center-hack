@@ -5,8 +5,9 @@
     "_generator": {
       "name": "bicep",
       "version": "0.29.47.4906",
-      "templateHash": "1555768701315526066"
-    }
+      "templateHash": "14344806110149308181"
+    },
+    "name": "azuredeploy"
   },
   "parameters": {
     "location": {
@@ -181,7 +182,8 @@
             ]
           },
           "use32BitWorkerProcess": false,
-          "linuxFxVersion": "PYTHON|3.12"
+          "linuxFxVersion": "PYTHON|3.12",
+          "appCommandLine": "python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0"
         },
         "httpsOnly": true
       },

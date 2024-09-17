@@ -1,3 +1,5 @@
+metadata name = 'azuredeploy'
+
 @description('Azure location where resources should be deployed (e.g., swedencentral)')
 param location string = 'swedencentral'
 
@@ -130,6 +132,7 @@ resource appService 'Microsoft.Web/sites@2023-12-01' = {
       }
       use32BitWorkerProcess: false
       linuxFxVersion: 'PYTHON|3.12'
+      appCommandLine: 'python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0'
     }
     httpsOnly: true
   }

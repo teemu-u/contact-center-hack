@@ -114,7 +114,6 @@ resource appHostingPlan 'Microsoft.Web/serverfarms@2023-12-01' = {
 resource appService 'Microsoft.Web/sites@2023-12-01' = {
   name: appName
   location: location
-  kind: 'functionapp'
   properties: {
     serverFarmId: appHostingPlan.id
     siteConfig: {
@@ -278,6 +277,7 @@ resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
   Return output values
 */
 
-output cosmosdb_account_name string = databaseAccountName
-output cosmosdb_database_name string = databaseName
-output cosmosdb_container_name string = databaseContainerName
+output cosmosdbAccountName string = databaseAccountName
+output cosmosdbDatabaseName string = databaseName
+output cosmosdbContainerName string = databaseContainerName
+output aiCognitiveServicesName string = aiCognitiveServicesName

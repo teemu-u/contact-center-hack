@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.29.47.4906",
-      "templateHash": "14661524247902751197"
+      "templateHash": "1555768701315526066"
     }
   },
   "parameters": {
@@ -166,7 +166,6 @@
       "apiVersion": "2023-12-01",
       "name": "[variables('appName')]",
       "location": "[parameters('location')]",
-      "kind": "functionapp",
       "properties": {
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appHostingPlanName'))]",
         "siteConfig": {
@@ -305,17 +304,21 @@
     }
   ],
   "outputs": {
-    "cosmosdb_account_name": {
+    "cosmosdbAccountName": {
       "type": "string",
       "value": "[variables('databaseAccountName')]"
     },
-    "cosmosdb_database_name": {
+    "cosmosdbDatabaseName": {
       "type": "string",
       "value": "[variables('databaseName')]"
     },
-    "cosmosdb_container_name": {
+    "cosmosdbContainerName": {
       "type": "string",
       "value": "[variables('databaseContainerName')]"
+    },
+    "aiCognitiveServicesName": {
+      "type": "string",
+      "value": "[variables('aiCognitiveServicesName')]"
     }
   }
 }

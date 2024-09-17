@@ -28,6 +28,8 @@ Clicking on button bellow will redirect you to the Azure portal to deploy the re
 
 If you prefer to deploy the resources manually, follow the steps below.
 
+After the deployment is concluded, navigate to the **Setup Azure AI Studio** section below.
+
 ### Manual Deployment
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group. In this guide, the resource group is named `rg-genai-callcenter`. At this point, it should be empty.
@@ -119,6 +121,8 @@ If you prefer to deploy the resources manually, follow the steps below.
 24. Give your project a name and click on `Create a project`.
 ![Create project 2](./images/aihub_createproject2.png)
 25. Wait for the project to be created.
+
+**NOTE:** In this guide we have deployed every resource using public networks to simplify the workshop. In a production scenario, you would restrict access to these resources to only the necessary services and networks by making use of Virtual Networks and Private Endpoints. To learn more, you can find a baseline architecture for this scenario [here](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat).
 
 ## Conclusion
 By reaching this section you should have every resource necessary to conduct the hackathon. You have deployed an Azure AI Search service, an Azure Cosmos DB account, and an Azure AI Studio. In the next challenges, you will use these services to build a call center application.

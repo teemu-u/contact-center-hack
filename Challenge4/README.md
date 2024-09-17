@@ -18,7 +18,18 @@ The sample calls have been recorded and are available in the [Call Samples/Audio
 
 You will be able to test the application with all of the Audio Samples or, if available to you, provide your own by including them in the [Call Samples](<../Challenge4/Call Samples/Audio/>) folder.
 
-## Install the required programs
+## Install the required programs 
+
+### GitHub Codespaces
+
+GitHub Codespaces is a cloud-based development environment that allows you to code from anywhere. It provides a fully configured environment that can be launched directly from any GitHub repository, saving you from lengthy setup times. You can access Codespaces from your browser, Visual Studio Code, or the GitHub CLI, making it easy to work from virtually any device.
+
+To open this repository in GitHub Codespaces, click on the button below:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/frsl92/genai_ws_callcenter_operations/tree/ts)
+
+Alternatively, you can follow the instructions below to set up your local environment.
+
 ### Visual Studio Code
 - Windows
     - Install [Visual Studio Code](https://code.visualstudio.com/)

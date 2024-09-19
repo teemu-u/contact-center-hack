@@ -30,7 +30,7 @@ To open this repository in GitHub Codespaces, click on the button below:
 
 Alternatively, you can follow the instructions below to set up your local environment.
 
-After your Codespaces is created, navigate to the **Guide: Setup environment** section below to continue.
+After your Codespaces is created, navigate to the [Guide: Setup environment](#guide-setup-environment) section below to continue.
 
 ### Visual Studio Code
 - Windows
@@ -74,7 +74,7 @@ After your Codespaces is created, navigate to the **Guide: Setup environment** s
         - `pip install -r requirements.txt`
 8. You can close the terminal.
 9. Navigate to the `Challenge4` folder.
-10. Duplicate the `config.env.template` file and rename it to `config.env`.
+10. Run the `./get-keys.sh` command from terminal which will automatically gather all required keys and store them in `config.env` file. Alternatively you can duplicate the `config.env.template` file, rename it to `config.env` and find all necessary keys as described in next step.
 11. Open the `config.env` file and fill in the necessary information.
     * Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
     * Navigate to your resource group.

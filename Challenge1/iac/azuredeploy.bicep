@@ -1,5 +1,3 @@
-metadata name = 'azuredeploy'
-
 @description('Azure location where resources should be deployed (e.g., swedencentral)')
 param location string = 'swedencentral'
 
@@ -124,6 +122,10 @@ resource appService 'Microsoft.Web/sites@2023-12-01' = {
           name: 'APPINSIGHTS_CONNECTION_STRING'
           value: appApplicationInsights.properties.ConnectionString
         }
+        {
+          name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'
+          value: 'true'
+        }
       ]
       cors: {
         allowedOrigins: [
@@ -138,43 +140,34 @@ resource appService 'Microsoft.Web/sites@2023-12-01' = {
   }
 }
 
+/*
+  Create Azure AI Search
+*/
+
+var searchServiceName = '${prefix}-search-${suffix}'
+
+resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
+  name: searchServiceName
+  location: location
+  sku: {
+    name: 'basic'
+  }
+  properties: {
+    hostingMode: 'default'
+  }
+}
+
 /* 
   Create Azure AI Studio
 */
 
 var aiCognitiveServicesName = '${prefix}-aiservices-${suffix}'
-var aiContainerRegistryName = replace('${prefix}-containerregistry-${suffix}', '-', '')
 var aiKeyvaultName = replace('${prefix}-kv-${suffix}', '-', '')
 var aiStorageAccountName = replace('${prefix}-strg-${suffix}', '-', '')
 var aiHubName = '${prefix}-aistudio-${suffix}'
 var aiHubFriendlyName = 'GenAI Call Center AI Studio'
 var aiHubDescription = 'This is an example AI resource for use in Azure AI Studio.'
-
-resource aiContainerRegistry 'Microsoft.ContainerRegistry/registries@2021-09-01' = {
-  name: aiContainerRegistryName
-  location: location
-  sku: {
-    name: 'Premium'
-  }
-  properties: {
-    adminUserEnabled: true
-    dataEndpointEnabled: false
-    policies: {
-      quarantinePolicy: {
-        status: 'enabled'
-      }
-      retentionPolicy: {
-        status: 'enabled'
-        days: 7
-      }
-      trustPolicy: {
-        status: 'disabled'
-        type: 'Notary'
-      }
-    }
-    zoneRedundancy: 'Disabled'
-  }
-}
+var aiHubProjectName = 'CallCenter'
 
 resource aiKeyVault 'Microsoft.KeyVault/vaults@2023-07-01' = {
   name: aiKeyvaultName
@@ -219,12 +212,52 @@ resource aiCognitiveServices 'Microsoft.CognitiveServices/accounts@2023-05-01' =
   }
 }
 
-resource aiHub 'Microsoft.MachineLearningServices/workspaces@2023-08-01-preview' = {
+resource aiCognitiveServicesDeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
+  name: 'gpt-4o-mini'
+  parent: aiCognitiveServices
+  properties: {
+    model: {
+      format: 'OpenAI'
+      name: 'gpt-4o-mini'
+      version: '2024-07-18'
+    }
+  }
+  sku: {
+    name: 'GlobalStandard'
+    capacity: 10
+  }
+}
+
+resource aiCognitiveServicesDeployment2 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
+  name: 'text-embedding-ada-002'
+  parent: aiCognitiveServices
+  dependsOn: [
+    aiCognitiveServicesDeployment
+  ]
+  properties: {
+    model: {
+      format: 'OpenAI'
+      name: 'text-embedding-ada-002'
+      version: '2'
+    }
+  }
+  sku: {
+    name: 'Standard'
+    capacity: 10
+  }
+}
+
+resource aiHub 'Microsoft.MachineLearningServices/workspaces@2024-07-01-preview' = {
   name: aiHubName
   location: location
   identity: {
     type: 'SystemAssigned'
   }
+  sku: {
+    name: 'Basic'
+    tier: 'Basic'
+  }
+  kind: 'hub'
   properties: {
     // organization
     friendlyName: aiHubFriendlyName
@@ -234,19 +267,38 @@ resource aiHub 'Microsoft.MachineLearningServices/workspaces@2023-08-01-preview'
     keyVault: aiKeyVault.id
     storageAccount: aiStorageAccount.id
     applicationInsights: appApplicationInsights.id
-    containerRegistry: aiContainerRegistry.id
+    
+    publicNetworkAccess: 'Enabled'
   }
-  kind: 'hub'
 
-  resource aiServicesConnection 'connections@2024-01-01-preview' = {
-    name: '${aiHubName}-connection-AzureOpenAI'
+  resource aiServicesConnection 'connections@2024-07-01-preview' = {
+    name: '${aiHubName}-aiservices'
     properties: {
-      category: 'AzureOpenAI'
+      category: 'AIServices'
       target: aiCognitiveServices.properties.endpoint
       authType: 'ApiKey'
       isSharedToAll: true
+      useWorkspaceManagedIdentity: true
       credentials: {
-        key: '${listKeys(aiCognitiveServices.id, '2021-10-01').key1}'
+        key: aiCognitiveServices.listKeys().key1
+      }
+      metadata: {
+        ApiType: 'Azure'
+        ResourceId: aiCognitiveServices.id
+      }
+    }
+  }
+
+  resource aiSearchConnection 'connections@2024-07-01-preview' = {
+    name: '${aiHubName}-search'
+    properties: {
+      category: 'CognitiveSearch'
+      target: 'https://${searchServiceName}.search.windows.net'
+      authType: 'ApiKey'
+      isSharedToAll: true
+      useWorkspaceManagedIdentity: true
+      credentials: {
+        key: searchService.listAdminKeys().primaryKey
       }
       metadata: {
         ApiType: 'Azure'
@@ -256,24 +308,25 @@ resource aiHub 'Microsoft.MachineLearningServices/workspaces@2023-08-01-preview'
   }
 }
 
-/*
-  Create Azure AI Search
-*/
-
-var searchServiceName = '${prefix}-search-${suffix}'
-
-resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
-  name: searchServiceName
+resource aiHubProject 'Microsoft.MachineLearningServices/workspaces@2024-07-01-preview' = {
+  name: aiHubProjectName
   location: location
+  identity: {
+    type: 'SystemAssigned'
+  }
   sku: {
-    name: 'basic'
+    name: 'Basic'
+    tier: 'Basic'
   }
+  kind: 'project'
   properties: {
-    hostingMode: 'default'
+    description: 'Call Center AI Studio Project'
+    friendlyName: 'Call Center'
+    hubResourceId: aiHub.id
+    hbiWorkspace: false
+    v1LegacyMode: false
+    publicNetworkAccess: 'Enabled'
   }
-  dependsOn: [
-    aiCognitiveServices
-  ]
 }
 
 /*
@@ -284,3 +337,5 @@ output cosmosdbAccountName string = databaseAccountName
 output cosmosdbDatabaseName string = databaseName
 output cosmosdbContainerName string = databaseContainerName
 output aiCognitiveServicesName string = aiCognitiveServicesName
+output aiHubName string = aiHubName
+output aiHubProjectName string = aiHubProjectName

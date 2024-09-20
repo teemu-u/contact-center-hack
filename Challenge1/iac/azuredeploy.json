@@ -5,13 +5,16 @@
     "_generator": {
       "name": "bicep",
       "version": "0.30.3.12046",
-      "templateHash": "1138224197823147472"
+      "templateHash": "17077850767571993031"
     }
   },
   "parameters": {
     "location": {
       "type": "string",
       "defaultValue": "swedencentral",
+      "allowedValues": [
+        "swedencentral"
+      ],
       "metadata": {
         "description": "Azure location where resources should be deployed (e.g., swedencentral)"
       }
@@ -291,7 +294,7 @@
       },
       "sku": {
         "name": "GlobalStandard",
-        "capacity": 10
+        "capacity": 120
       },
       "dependsOn": [
         "[resourceId('Microsoft.CognitiveServices/accounts', variables('aiCognitiveServicesName'))]"
@@ -310,7 +313,7 @@
       },
       "sku": {
         "name": "Standard",
-        "capacity": 10
+        "capacity": 100
       },
       "dependsOn": [
         "[resourceId('Microsoft.CognitiveServices/accounts', variables('aiCognitiveServicesName'))]",

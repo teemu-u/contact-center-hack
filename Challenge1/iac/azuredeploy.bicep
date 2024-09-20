@@ -1,3 +1,6 @@
+@allowed([
+  'swedencentral'
+])
 @description('Azure location where resources should be deployed (e.g., swedencentral)')
 param location string = 'swedencentral'
 
@@ -224,7 +227,7 @@ resource aiCognitiveServicesDeployment 'Microsoft.CognitiveServices/accounts/dep
   }
   sku: {
     name: 'GlobalStandard'
-    capacity: 10
+    capacity: 120
   }
 }
 
@@ -243,7 +246,7 @@ resource aiCognitiveServicesDeployment2 'Microsoft.CognitiveServices/accounts/de
   }
   sku: {
     name: 'Standard'
-    capacity: 10
+    capacity: 100
   }
 }
 

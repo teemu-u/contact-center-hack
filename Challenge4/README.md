@@ -74,7 +74,7 @@ After your Codespaces is created, navigate to the [Guide: Setup environment](#gu
         - `pip install -r requirements.txt`
 8. You can close the terminal.
 9. Navigate to the `Challenge4` folder.
-10. Run the `./get-keys.sh` command from terminal which will automatically gather all required keys and store them in `config.env` file. Alternatively you can duplicate the `config.env.template` file, rename it to `config.env` and find all necessary keys as described in next step.
+10. Run the `./get-keys.sh` command from terminal which will automatically gather all required keys from Azure and store them in `config.env` file. If needed, script will prompt you to sign in to your Azure account. Alternatively you can duplicate the `config.env.template` file, rename it to `config.env` and find all necessary keys as described in next step.
 11. Open the `config.env` file and fill in the necessary information.
     * Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
     * Navigate to your resource group.

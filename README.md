@@ -21,8 +21,9 @@ By participating in this hackathon, you will learn how to:
 1. An Azure subscription
 2. A resource group with the `Contributor` role assigned
 3. Basic knowledge of Python
-4. Visual Studio Code
-5. Python (tested with version 3.12.5)
+4. GitHub account
+5. [GitHub Codespaces](https://github.com/features/codespaces) or Visual Studio Code for local development
+6. Python for local development (tested with version 3.12.5)
 
 ## Hackathon Format: Challenge-Based
 This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks designed to test and enhance your skills in specific aspects of AI app development. You will approach these challenges by:

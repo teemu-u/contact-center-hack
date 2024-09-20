@@ -20,9 +20,11 @@ By participating in this hackathon, you will learn how to:
 ## Requirements
 1. An Azure subscription
 2. A resource group with the `Contributor` role assigned
-3. Basic knowledge of Python
-4. Visual Studio Code
-5. Python (tested with version 3.12.5)
+3. 120k of available quota for the *gpt-4o-mini* model in the *Sweden Central* region
+4. 20k of available quota for the *text-embedding-ada-002* model in the *Sweden Central* region 
+5. Basic knowledge of Python
+6. Visual Studio Code
+7. Python (tested with version 3.12.5)
 
 ## Hackathon Format: Challenge-Based
 This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks designed to test and enhance your skills in specific aspects of AI app development. You will approach these challenges by:

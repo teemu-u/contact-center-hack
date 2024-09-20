@@ -246,7 +246,7 @@ resource aiCognitiveServicesDeployment2 'Microsoft.CognitiveServices/accounts/de
   }
   sku: {
     name: 'Standard'
-    capacity: 100
+    capacity: 20
   }
 }
 

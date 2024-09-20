@@ -28,8 +28,6 @@ Clicking on button bellow will redirect you to the Azure portal to deploy the re
 
 If you prefer to deploy the resources manually, follow the steps below.
 
-After the deployment is concluded, navigate to the **Setup Azure AI Studio** section below.
-
 ### Manual Deployment
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group. In this guide, the resource group is named `rg-genai-callcenter`. At this point, it should be empty.

@@ -10,10 +10,10 @@ In this challenge, we will deploy our streamlit application to an Azure Web App 
 ## Guide: Configure the Azure Web App Service to run Streamlit
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group.
-3. Locate your Azure App Service (not the Azure App Service Plan created automatically for you) and open it.
+3. You can skip this step if your resources have been deployed automatically in [Challenge 1](../Challenge1/README.md). Locate your Azure App Service (not the Azure App Service Plan created automatically for you) and open it.
     * In the left pane, select `Settings` and `Configuration`.
     * Locate the *Startup Command*. Replace the default value with:
-    ```pip install -r requirements.txt && python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0```
+    ```python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0```
     ![appconfig](./images/appconfig.png)
     * Click on the `Save` button at the top.
 4. Return to Visual Studio Code and open the `Challenge4` folder. Note: Open the `Challenge4` folder, not the `root` folder where all the Challenges reside.

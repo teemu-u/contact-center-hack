@@ -4,14 +4,18 @@
 # deployed using "Deploy to Azure" button and will store them in a file named
 # "config.env" in the current directory.
 
+az extension add --upgrade --name ml -y
+/opt/az/bin/python3 -m pip install azure-core==1.31.0
+
 # Login to Azure
 if [ -z "$(az account show)" ]; then
   echo "User not signed in Azure. Signin to Azure using 'az login' command."
-  az login
+  az login --use-device-code
 fi
 
 # Get the resource group name from the script parameter named resource-group
 resourceGroupName=""
+aistudioproject=""
 
 # Parse named parameters
 while [[ "$#" -gt 0 ]]; do
@@ -26,6 +30,12 @@ done
 if [ -z "$resourceGroupName" ]; then
     echo "Enter the resource group name where the resources are deployed:"
     read resourceGroupName
+fi
+
+# Check if aistudioproject is provided
+if [ -z "$aistudioproject" ]; then
+    echo "Enter the name of your AI Studio Project:"
+    read aistudioproject
 fi
 
 # Get resource group deployments, find deployments starting with 'Microsoft.Template' and sort them by timestamp
@@ -59,11 +69,12 @@ rm tmp_outputs.json
 # Get the keys from the resources
 echo "Getting the keys from the resources..."
 cosmosdbAccountKey=$(az cosmosdb keys list --name $cosmosdbAccountName --resource-group $resourceGroupName --query primaryMasterKey -o tsv)
-cosmosdbConnectionUrl=$(az cosmosdb keys list --type connection-strings --name $cosmosdbAccountName --resource-group $resourceGroupName --query "connectionStrings[0].connectionString" -o tsv)
+cosmosdbConnectionUrl=$(az cosmosdb show --name $cosmosdbAccountName --resource-group $resourceGroupName --query "documentEndpoint" -o tsv)
 aiCognitiveServicesKey=$(az cognitiveservices account keys list --name $aiCognitiveServicesName --resource-group $resourceGroupName --query key1 -o tsv)
 aiCognitiveServicesRegion=$(az cognitiveservices account show --name $aiCognitiveServicesName --resource-group $resourceGroupName --query location -o tsv)
-aiEndpoint=$(az ml online-endpoint list --resource-group $resourceGroupName --workspace-name $aiHubProjectName --query "[0].{endpoint:properties.serviceUrl}" -o tsv)
-aiEndpointKey=$(az ml online-endpoint list --resource-group $resourceGroupName --workspace-name $aiHubProjectName --query "[0].{key:properties.apiKeys.default}" -o tsv)
+endpointname=$(az ml online-endpoint list --resource-group $resourceGroupName --workspace-name $aistudioproject --query "[0].{key:name}" -o tsv)
+aiEndpoint=$(az ml online-endpoint show --name $endpointname  --resource-group $resourceGroupName --workspace-name $aistudioproject --query "scoring_uri" -o tsv)
+aiEndpointKey=$(az ml online-endpoint get-credentials --name $endpointname --resource-group $resourceGroupName --workspace-name $aistudioproject --query "primaryKey" -o tsv)
 
 # Overwrite the existing config.env file
 if [ -f config.env ]; then

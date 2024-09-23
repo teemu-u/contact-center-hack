@@ -76,9 +76,9 @@ cosmosdbAccountKey=$(az cosmosdb keys list --name $cosmosdbAccountName --resourc
 cosmosdbConnectionUrl=$(az cosmosdb show --name $cosmosdbAccountName --resource-group $resourceGroupName --query "documentEndpoint" -o tsv)
 aiCognitiveServicesKey=$(az cognitiveservices account keys list --name $aiCognitiveServicesName --resource-group $resourceGroupName --query key1 -o tsv)
 aiCognitiveServicesRegion=$(az cognitiveservices account show --name $aiCognitiveServicesName --resource-group $resourceGroupName --query location -o tsv)
-endpointname=$(az ml online-endpoint list --resource-group $resourceGroupName --workspace-name $aistudioproject --query "[0].{key:name}" -o tsv)
-aiEndpoint=$(az ml online-endpoint show --name $endpointname  --resource-group $resourceGroupName --workspace-name $aistudioproject --query "scoring_uri" -o tsv)
-aiEndpointKey=$(az ml online-endpoint get-credentials --name $endpointname --resource-group $resourceGroupName --workspace-name $aistudioproject --query "primaryKey" -o tsv)
+endpointname=$(az ml online-endpoint list --resource-group $resourceGroupName --workspace-name $aiHubProjectName --query "[0].{key:name}" -o tsv)
+aiEndpoint=$(az ml online-endpoint show --name $endpointname  --resource-group $resourceGroupName --workspace-name $aiHubProjectName --query "scoring_uri" -o tsv)
+aiEndpointKey=$(az ml online-endpoint get-credentials --name $endpointname --resource-group $resourceGroupName --workspace-name $aiHubProjectName --query "primaryKey" -o tsv)
 
 # Overwrite the existing config.env file
 if [ -f config.env ]; then

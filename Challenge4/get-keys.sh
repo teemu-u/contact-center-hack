@@ -4,38 +4,37 @@
 # deployed using "Deploy to Azure" button and will store them in a file named
 # "config.env" in the current directory.
 
-az extension add --upgrade --name ml -y
-/opt/az/bin/python3 -m pip install azure-core==1.31.0
-
 # Login to Azure
 if [ -z "$(az account show)" ]; then
   echo "User not signed in Azure. Signin to Azure using 'az login' command."
   az login --use-device-code
 fi
 
+# Install ml extension if needed
+if [ -z "$(az extension show --name ml)" ]; then
+	echo "Installing Azure ML extension..."
+	az extension add --name ml --upgrade -y
+	pip3 install azure-core==1.31.0
+fi
+
 # Get the resource group name from the script parameter named resource-group
 resourceGroupName=""
-aistudioproject=""
+aiStudioProject=""
 
 # Parse named parameters
 while [[ "$#" -gt 0 ]]; do
-    case $1 in
-        --resource-group) resourceGroupName="$2"; shift ;;
-        *) echo "Unknown parameter passed: $1"; exit 1 ;;
-    esac
-    shift
+		case $1 in
+				--resource-group) resourceGroupName="$2"; shift ;;
+				--aistudio-project) aiStudioProject="$2"; shift ;;
+				*) echo "Unknown parameter passed: $1"; exit 1 ;;
+		esac
+		shift
 done
 
 # Check if resourceGroupName is provided
 if [ -z "$resourceGroupName" ]; then
     echo "Enter the resource group name where the resources are deployed:"
     read resourceGroupName
-fi
-
-# Check if aistudioproject is provided
-if [ -z "$aistudioproject" ]; then
-    echo "Enter the name of your AI Studio Project:"
-    read aistudioproject
 fi
 
 # Get resource group deployments, find deployments starting with 'Microsoft.Template' and sort them by timestamp
@@ -61,7 +60,12 @@ cosmosdbDatabaseName=$(jq -r '.cosmosdbDatabaseName.value' tmp_outputs.json)
 cosmosdbContainerName=$(jq -r '.cosmosdbContainerName.value' tmp_outputs.json)
 aiCognitiveServicesName=$(jq -r '.aiCognitiveServicesName.value' tmp_outputs.json)
 aiHubName=$(jq -r '.aiHubName.value' tmp_outputs.json)
-aiHubProjectName=$(jq -r '.aiHubProjectName.value' tmp_outputs.json)
+aiHubProjectName=$aiStudioProject
+# Get the AI Studio project name, if not provided
+if [ -z "$aiHubProjectName" ]; then
+	echo "AI Studio project name is not provided, reading default project name..."
+	aiHubProjectName=$(jq -r '.aiHubProjectName.value' tmp_outputs.json)
+fi
 
 # Delete the temporary file
 rm tmp_outputs.json

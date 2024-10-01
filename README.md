@@ -46,13 +46,13 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
 3. Challenge 03: **[Create your first LLM-Powered Endpoint](Challenge3/README.md)**
    - Create a Prompt Flow and deploy it as an API.
 4. Challenge 04: **[Real-time call transcription and agent assistance](Challenge4/README.md)**
-   - Develop an application which uses Azure AI Speech and the Prompt Flow endpoint to assist the call center agent.
+   - Develop an app which uses Azure AI Speech and the Prompt Flow endpoint to assist the call center agent.
 5. Challenge 05: **[Deploy the application](Challenge5/README.md)**
    - Deploy the application in Azure App Service.
    
 Each challenge comes with its own set of tasks and objectives. Feel free to explore the challenges, learn, and have fun during this hackathon! If you have any questions, don't hesitate to reach out to your coach.
 
-**Happy hacking! 
+Happy hacking! 
 
 ## Contributors
 - Fabio Lopes

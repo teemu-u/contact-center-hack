@@ -11,10 +11,11 @@ Your quest is to innovate for the future at the fictitious enterprise, XYZ Telec
 ## Learning Objectives
 
 By participating in this hackathon, you will learn how to:
-- **AI-Powered Information Extraction:** Understand how to use Azure OpenAI Service to extract and transform key information from SOPs, enhancing data with AI.
-- **Indexing and Search with Azure AI:** Explore how to use Azure AI Search to index SOPs and enable fast, efficient data retrieval.
-- **Workflow Orchestration with Prompt Flow:** Learn how to orchestrate interactions between AI models and compute services using Prompt Flow for seamless automation.
-- **Web Front-End Development:** Build a web interface using Azure App Service, allowing users to search and interact with processed data in a user-friendly way.
+- **Extract Information from files :** Understand how to use Azure OpenAI Service to extract and transform key information from SOPs, enhancing data with AI.
+- **Index and Search your Data:** Explore how to use Azure AI Search to index SOPs and enable fast, efficient data retrieval.
+- **Orchestrate a RAG solution with Prompt Flow:** Learn how to orchestrate interactions between AI models and compute services using Prompt Flow for seamless automation.
+- **Build a Web App for your Flow:** Build a web interface using Azure App Service, allowing users to search and interact with processed data in a user-friendly way.
+  
 ## Architecture
 In this workflow, Standard Operation Procedures (SOPs) are uploaded and stored in an Azure Storage Account. From there, the Azure AI Hub integrates various models and compute services like the Azure OpenAI Service, which are used to interact with and process these documents. SOPs are indexed using Azure AI Search and stored as vector indexes for fast retrieval. We use the Azure CosmosDB to store the call transcripts and enables further interactions with processed data, while services like Key Vault, Azure Application Insights, and Log Analytics ensure security, insights, and monitoring. Prompt Flow plays a key role in orchestrating the flow, managing interactions between all of the previously mentioned resources. The App Service then allows users, like contact center agents, to access a web front-end interface, providing a seamless user experience for searching and interacting with the indexed data.
 

@@ -75,6 +75,7 @@ If you prefer to deploy the resources manually, follow the steps below.
     * In the *Pricing Plan* field, select `Basic B1`.
     * Click on `Review + Create` and then `Create`.
     * Wait for the deployment to complete.
+    > **Note**: If the deployment fails, try changing the *Region* to a different location than **Sweden Central** (e.g., **North Europe**).
 10. Navigate to your resource group.
 11. You should now have all the services deployed in your resource group:
     * An Azure AI Search Service
@@ -110,7 +111,7 @@ If you prefer to deploy the resources manually, follow the steps below.
 17. Select `text-embedding-ada-002` and click `Confirm`.
 18. Click on `Customize`.
 19. Fill the `Deployment name`.
-20. In `Deployment Type`, select either *Standard*.
+20. In `Deployment Type`, select *Standard*.
 21. In the `Tokens per Minute Rate Limit (thousands)` select at least 100k. If this is blocked for you, there might be other resources consuming quota in your subscription. Please check with your subscription administrator.
 ![Create project](./images/textembeddings.png)
 22. Return to the `Hub Overview`.

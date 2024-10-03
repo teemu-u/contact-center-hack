@@ -61,12 +61,12 @@ After your Codespaces is created, navigate to the [Guide: Setup environment](#gu
 4. Open a new terminal in Visual Studio Code. (You can use the top bar of Visual Studio, in the `Terminal` tab).
 5. Create the virtual environment by running the following command:
     - Windows
-        - `python -m virtualenv venv`
+        - `python -m venv myvenv`
     - Linux / Mac / Codespaces
         - `virtualenv -p python3 venv`
 6. Activate the virtual environment by running the following command:
     - Windows
-        - `.\venv\Scripts\activate.ps1`
+        - `.\myvenv\Scripts\activate.ps1`
     - Linux / Mac / Codespaces
         - `source ./venv/bin/activate`
 7. Install the necessary packages to run the application:

@@ -28,66 +28,20 @@ To open this repository in GitHub Codespaces, click on the button below:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/frsl92/genai_ws_callcenter_operations/tree/ts)
 
-Alternatively, you can follow the instructions below to set up your local environment.
-
-After your Codespaces is created, navigate to the [Guide: Setup environment](#guide-setup-environment) section below to continue.
-
-### Visual Studio Code
-- Windows
-    - Install [Visual Studio Code](https://code.visualstudio.com/)
-- Linux
-    - Install [Visual Studio Code](https://code.visualstudio.com/)
-- Mac
-    - Install [Visual Studio Code](https://code.visualstudio.com/)
-
-### Python
-- Windows
-    - Install [Python 3.12.2](https://www.python.org/downloads/release/python-3125/)
-- Linux
-    - It is usually pre-installed. Check version with `python3 --version`.
-- Mac
-    - `brew install python3`
-
-## Guide: Install Azure Web App Service extension
-1. Open Visual Studio Code.
-2. Click on the Extensions icon on the left sidebar.
-3. Search for `Azure Web App Service` and click on `Install`.
+After your Codespaces is created, please continue with next section.
 
 ## Guide: Setup environment
-1. Clone the repository to your local machine. In Codespaces, this step is not necessary.
-2. Navigate to the chosen location and locate the `Challenge4` folder. 
-3. Open this folder in Visual Studio Code. In Codespaces, by default the root will be chosen, you need to use the "File>Open Folder..." menu to open the `Challenge4` folder.
-![vs1](./images/vs1.png)
-4. Open a new terminal in Visual Studio Code. (You can use the top bar of Visual Studio, in the `Terminal` tab).
-5. Create the virtual environment by running the following command:
-    - Windows
-        - `python -m venv myvenv`
-    - Linux / Mac / Codespaces
-        - `virtualenv -p python3 venv`
-6. Activate the virtual environment by running the following command:
-    - Windows
-        - `.\myvenv\Scripts\activate.ps1`
-    - Linux / Mac / Codespaces
-        - `source ./venv/bin/activate`
-7. Install the necessary packages to run the application:
-    - Windows / Mac / Linux / Codespaces
-        - `pip install -r requirements.txt`
-8. You can close the terminal.
-9. Navigate to the `Challenge4` folder.
-10. Run the `./get-keys.sh` command from terminal which will automatically gather all required keys from Azure and store them in `config.env` file. If needed, script will prompt you to sign in to your Azure account. Alternatively you can duplicate the `config.env.template` file, rename it to `config.env` and find all necessary keys as described in next step.
-11. Open the `config.env` file and fill in the necessary information.
-    * Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
-    * Navigate to your resource group.
-    * Select the `Azure AI services` resource. In the `Overview` section, you will find the `KEY 1` and `Location/Region` information. Fill in the `SPEECH_KEY` and `SPEECH_REGION` fields in the `config.env` file.
-    ![aiserviceskeys](./images/aiserviceskeys.png)
-    * Navigate to your resource group.
-    * Select the `Azure AI Studio` resource and launch it. Navigate to `Deployments` and select the deployment created in the previous [Challenge 3](../Challenge3/README.md). In the `Consume` section, you will find the `REST Endpoint` and `Primary Key`. Fill in the `PROMPTFLOW_DEPLOYMENT_URL` and `PROMPTFLOW_DEPLOYMENT_KEY` field in the `config.env` file.
-    ![pfkeys](./images/pfkeys.png)
-    * Navigate to your resource group.
-    * Select the `Cosmos DB Account` resource. In the left pane, select `Keys`. You will find the `URI` and `PRIMARY KEY` information (in the Read-write Keys). Fill in the `COSMOSDB_CONNECTION_URL` and `COSMOSDB_CONNECTION_KEY` fields in the `config.env` file.
-    ![cosmoskeys](./images/cosmoskeys.png)
-    * Fill in the `COSMOSDB_DATABASE_NAME` and `COSMOSDB_CONTAINER_NAME` fields in the `config.env` file with the values specified in [Challenge 1](../Challenge1/README.md). If you followed the guide, the values should be `callcenter` and `calls`, respectively.
-    ![config](./images/config.png)
+
+You will need to configure the environment variables in the `config.env` file to enable application access to previously deployed resources in Azure. The `config.env` file is a configuration file that contains the environment variables for the application. The `config.env` file is automatically created running the following command within the terminal in your Codespace:
+
+```bash
+cd Challenge4
+./get-keys.sh --resource-group <resource-group-name>
+```
+
+**NOTE:** Replace `<resource-group-name>` with the resource group name created in `Challenge1`.
+
+This script will connect to Azure and fetch the necessary keys and populate the `config.env` file with the required values in the `Challenge4` directory of the repository. If needed, script will prompt you to sign in to your Azure account.
 
 **NOTE:** In a production scenario, the application would be retrieving the credentials from a secure location, such as Azure Key Vault. For the purpose of this challenge, to simplify, we are storing the credentials in a configuration file.
 
@@ -95,7 +49,7 @@ After your Codespaces is created, navigate to the [Guide: Setup environment](#gu
 1. Navigate to the `Challenge4` folder.
 2. Open a terminal window and run the following command: `streamlit run app.py`
 ![streamlit](./images/streamlit.png)
-3. If you are running locally, a new tab will open in your default browser with the application running or you can use the *Local URL* provided in the terminal. If the application is running in Codespaces, you can use the *Ports* tab provided near the terminal.
+3. Codespaces will prompt you with a notification to open the URL in new browser tab. Alternativellym you can use the *Ports* tab provided near the terminal to open the application.
 4. From the dropdown list, you can select a [Call Sample](<../Challenge4/Call Samples/Audio/>) and click on the `Start` button.
 ![app1](./images/app1.png)
 5. The application will start transcribing the call and providing suggestions to the agent in real time. Every time the application detects that a complete phrase was spoken, it will call the Prompt Flow endpoint and update all the info to the agent.

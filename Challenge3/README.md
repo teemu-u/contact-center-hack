@@ -38,11 +38,43 @@ For enterprise readiness, Prompt Flow supports team collaboration, version contr
 8. Click on the `+ Create`.
 9. Select `Upload` from the *Upload from local* section.
 ![importflow](./images/importflow.png)
-10. Select `Zip file` and choose the zip file in the challenge [promptflow folder](../Challenge3/promptflow).
-11. Give you flow a name in the `Folder name` field.
-12. In the `Select flow type` field, select `Standard flow`.
-13. Click `Upload`.
-14. Once completed, you will be directed to the Prompt Flow page.
+10. Extract the `agentassist` Zip file in the challenge [promptflow folder](../Challenge3/promptflow). 
+11. Open `flow.dag.yaml` file and add the following to the end of the file:  
+```
+environment_variables:
+  PF_DISABLE_TRACING: true
+```
+12. Save the flow.dag.yaml file
+13. Use Upload folder option and choose the updated agentassist folder.
+14. Give you flow a name in the `Folder name` field.
+15. In the `Select flow type` field, select `Standard flow`.
+16. Click `Upload`.
+17. Once completed, you will be directed to the Prompt Flow page.
+
+> **Note**: If you encounter a `cloudDependencyPermission` error stating that the request is not authorized to perform this operation, follow these steps to resolve it:
+
+   ![error](./images/access-to-storage-error.png) 
+
+   1. Navigate to your resource group and select the **Storage Account** that was created.
+   
+      ![storage](./images/add-role-to-storage-account-step11.png) 
+
+   2. In the left pane, navigate to **IAM** (Identity and Access Management).
+   3. Click on `Add` and then select `Add role assignment`.
+
+      ![iam](./images/add-role-to-storage-account-step1.png) 
+
+   4. Search for the role `Storage Blob Data Contributor` and select it.
+   
+      ![role](./images/add-role-to-storage-account-step2.png)
+
+   5. Click `Next`.
+   6. Under `Assign access to`, select **Managed identity**.
+   7. In the `Select members` section, choose the **Azure AI Hub**.
+   8. Select the **Azure AI Studio** you created and click `Select`.
+   ![assign](./images/add-role-to-storage-account-step3.png)
+   9. Click `Review + Assign` to complete the role assignment.
+   10. Return back to **Import Prompt Flow** step and try it again. The error should be resolved, and you should be able to create the prompt flow.
 
 ## Guide: Explanation of the Flow
 

@@ -38,11 +38,18 @@ For enterprise readiness, Prompt Flow supports team collaboration, version contr
 8. Click on the `+ Create`.
 9. Select `Upload` from the *Upload from local* section.
 ![importflow](./images/importflow.png)
-10. Select `Zip file` and choose the zip file in the challenge [promptflow folder](../Challenge3/promptflow).
-11. Give you flow a name in the `Folder name` field.
-12. In the `Select flow type` field, select `Standard flow`.
-13. Click `Upload`.
-14. Once completed, you will be directed to the Prompt Flow page.
+10. Extract the `agentassist` Zip file in the challenge [promptflow folder](../Challenge3/promptflow). 
+11. Open `flow.dag.yaml` file and add the following to the end of the file:  
+```
+environment_variables:
+  PF_DISABLE_TRACING: true
+```
+12. Save the flow.dag.yaml file
+13. Use Upload folder option and choose the updated agentassist folder.
+14. Give you flow a name in the `Folder name` field.
+15. In the `Select flow type` field, select `Standard flow`.
+16. Click `Upload`.
+17. Once completed, you will be directed to the Prompt Flow page.
 
 > **Note**: If you encounter a `cloudDependencyPermission` error stating that the request is not authorized to perform this operation, follow these steps to resolve it:
 

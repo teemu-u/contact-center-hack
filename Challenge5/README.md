@@ -8,22 +8,13 @@
 In this challenge, we will deploy our streamlit application to an Azure Web App Service to be available for usage outside of our local environment.
 
 ## Guide: Configure the Azure Web App Service to run Streamlit
-1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
-2. Navigate to your resource group.
-3. You can skip this step if your resources have been deployed automatically in [Challenge 1](../Challenge1/README.md). Locate your Azure App Service (not the Azure App Service Plan created automatically for you) and open it.
-    * In the left pane, select `Settings` and `Configuration`.
-    * Locate the *Startup Command*. Replace the default value with:
-    ```python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0```
-    ![appconfig](./images/appconfig.png)
-    * Click on the `Save` button at the top.
-4. Return to Visual Studio Code and open the `Challenge4` folder. Note: Open the `Challenge4` folder, not the `root` folder where all the Challenges reside.
-![vscode](./images/vscode.png)
-5. Right click the empty space in the `Challenge4` directory within Visual Studio Code and select `Deploy to Web App`.
+1. Right click the directory `Challenge4` within Codespace and select `Deploy to Web App`. Sign-in to your Azure account if necessary.
 ![deploywebapp](./images/deploywebapp.png)
-6. Select the Azure Web App created in [Challenge 1](../Challenge1/README.md) and deploy your Web App.
-7. Wait for the deployment to complete.
-8. Return to the Azure portal and navigate to your Azure Web App.
-9. You can find the URL of your application in the `Overview` section, under the `Default domain` field.
+2. Select the Azure Web App created in [Challenge 1](../Challenge1/README.md) and deploy your Web App.
+3. Wait for the deployment to complete.
+4. Navigate to the [Azure portal](https://portal.azure.com/#home) and sign in with your account.
+5. Navigate to the resource group created in `Challenge1` and open the App Service resource (name of the resource starts with `hackai-appservice`).
+6. You can find the URL of your application in the `Overview` section, under the `Default domain` field.
 ![url](./images/url.png)
 10. Open the URL in your browser to access the application.
 11. The first time you open your application it may take a few minutes to load. Subsequent loads will be faster.

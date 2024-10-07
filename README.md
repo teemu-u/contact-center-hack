@@ -54,10 +54,3 @@ This hackathon adopts a challenge-based format, offering you a unique opportunit
 Each challenge comes with its own set of tasks and objectives. Feel free to explore the challenges, learn, and have fun during this hackathon! If you have any questions, don't hesitate to reach out to your coach.
 
 Happy hacking! 
-
-## Contributors
-- Fabio Lopes
-- Marta Santos
-- Tomas Szabo
-
-

@@ -312,6 +312,17 @@ You should return your answer in the following JSON schema:
 17. You can now consume this endpoint in your application. The `Consume` tab will provide you with the necessary information to do so with sample code.
 ![consume](./images/consume.png)
 
+## Your time to Prompt!  (optional)
+
+Great! You have created this amazing flow. However, the Contact Center Operations Manager wants to add (even) more features to the service. He wants you to create a *node* called *generateServiceUpgradeOptions*. 
+
+As an example, based on this [phone call](https://github.com/martaldsantos/contact-center-hack/blob/main/Challenge4/Call%20Samples/Plain%20text/Plan%20or%20Service%20Changes-1.txt), and on Jane's request for more data and premium channels, the system could proactively suggest relevant plans tailored to the customer’s account usage and preferences (e.g., Premium Plan with additional data and channels).
+
+Go back to your Prompt Flow and add one more LLM node and write a structured Prompt divided by these 3 logical sections:
+- System
+- Step-by-step
+- Output Requirements
+
 ## Conclusion
 In this challenge you were introduced to the Prompt Flow tool and how it can be used to create a flow that integrates LLMs, prompts, and Python tools. You learned how to configure the flow, test it and deploy it as an endpoint. You can now consume this endpoint in your application to provide real-time information to your call center agents.
 

@@ -4,8 +4,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.30.3.12046",
-      "templateHash": "17077850767571993031"
+      "version": "0.30.23.60470",
+      "templateHash": "9387984168501867655"
     }
   },
   "parameters": {
@@ -214,7 +214,7 @@
           },
           "use32BitWorkerProcess": false,
           "linuxFxVersion": "PYTHON|3.12",
-          "appCommandLine": "python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0"
+          "appCommandLine": "python -m pip install -r requirements.txt && python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0"
         },
         "httpsOnly": true
       },
@@ -313,7 +313,7 @@
       },
       "sku": {
         "name": "Standard",
-        "capacity": 100
+        "capacity": 20
       },
       "dependsOn": [
         "[resourceId('Microsoft.CognitiveServices/accounts', variables('aiCognitiveServicesName'))]",

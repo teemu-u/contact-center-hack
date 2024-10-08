@@ -137,7 +137,7 @@ resource appService 'Microsoft.Web/sites@2023-12-01' = {
       }
       use32BitWorkerProcess: false
       linuxFxVersion: 'PYTHON|3.12'
-      appCommandLine: 'python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0'
+      appCommandLine: 'python -m pip install -r requirements.txt && python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0'
     }
     httpsOnly: true
   }

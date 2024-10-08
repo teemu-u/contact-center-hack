@@ -167,3 +167,5 @@ config.env
 system_message.txt
 .vscode/
 .deployment
+
+.DS_Store

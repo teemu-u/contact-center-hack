@@ -344,6 +344,8 @@ In this dashboard you will be able to:
 - Track operational metrics: request count, latency, and error rate.
 - Set up preconfigured alerts and defaults for recurring monitoring.
 
+Get to know more by referring back to the [official documentation](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/monitor-quality-safety?tabs=azure-studio)
+
 --- 
 
 ## Conclusion

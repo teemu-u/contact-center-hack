@@ -32,12 +32,6 @@ In this workflow, Standard Operation Procedures (SOPs) are uploaded and stored i
 7. [GitHub Codespaces](https://github.com/features/codespaces) or Visual Studio Code for local development
 8. Python for local development (tested with version 3.12.5)
 
-## Hackathon Format: Challenge-Based
-This hackathon adopts a challenge-based format, offering you a unique opportunity to learn while dealing with practical problems. Each challenge includes one or more self-contained tasks designed to test and enhance your skills in specific aspects of AI app development. You will approach these challenges by:
-- Analyzing the problem statement.
-- Strategizing your approach to find the most effective solution.
-- Leveraging the provided lab environment and Azure AI services.
-- Collaborating with peers to refine and implement your solutions.
 
 ### Challenges
 1. Challenge 01: **[Resources Deployment](Challenge1/README.md)**

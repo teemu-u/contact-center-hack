@@ -312,7 +312,9 @@ You should return your answer in the following JSON schema:
 17. You can now consume this endpoint in your application. The `Consume` tab will provide you with the necessary information to do so with sample code.
 ![consume](./images/consume.png)
 
-## Your time to Prompt!  (optional)
+---
+
+## EXTRA Challenge: Your time to Prompt!  (optional)
 
 Great! You have created this amazing flow. However, the Contact Center Operations Manager wants to add (even) more features to the service. He wants you to create a *node* called *generateServiceUpgradeOptions*. 
 
@@ -322,6 +324,27 @@ Go back to your Prompt Flow and add one more LLM node and write a structured Pro
 - System
 - Step-by-step
 - Output Requirements
+
+## EXTRA Challenge: Monitoring AI Applications (optional)
+
+Now that you have such a great flow created, how do you monitor the data consumption of your endpoint? And of course, by data I can mean a lot of different things. Let's break it down:
+
+### Monitoring Inside the Azure AI Studio
+
+Go back to your deployed endpoint inside the Azure AI Studio, and you will be able to find the Monitoring (Preview) tool:
+![image](https://github.com/user-attachments/assets/77fd7e03-85b5-4179-8bef-e9cccae672f3)
+
+When you enable this option and consume your endpoint you will be able to see a dashboard such as this (beware this might take up to 1 day to be updated):
+![image](https://github.com/user-attachments/assets/f2f38bb9-0803-45d0-9a88-c86831748896)
+
+In this dashboard you will be able to:
+- Collect production inference data from your deployed Prompt Flow application.
+- Apply Responsible AI evaluation metrics: groundedness, coherence, fluency, and relevance.
+- Monitor prompts, completions, and total token usage across each model deployment.
+- Track operational metrics: request count, latency, and error rate.
+- Set up preconfigured alerts and defaults for recurring monitoring.
+
+--- 
 
 ## Conclusion
 In this challenge you were introduced to the Prompt Flow tool and how it can be used to create a flow that integrates LLMs, prompts, and Python tools. You learned how to configure the flow, test it and deploy it as an endpoint. You can now consume this endpoint in your application to provide real-time information to your call center agents.

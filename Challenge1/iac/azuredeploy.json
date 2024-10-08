@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.30.23.60470",
-      "templateHash": "9387984168501867655"
+      "templateHash": "18327215168093153896"
     }
   },
   "parameters": {
@@ -107,7 +107,8 @@
         "locations": "[variables('locations')]",
         "databaseAccountOfferType": "Standard",
         "enableAutomaticFailover": false,
-        "enableMultipleWriteLocations": false
+        "enableMultipleWriteLocations": false,
+        "disableLocalAuth": false
       }
     },
     {

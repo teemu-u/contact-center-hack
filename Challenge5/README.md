@@ -21,6 +21,12 @@ In this challenge, we will deploy our streamlit application to an Azure Web App 
 
 **NOTE:** This application is available to anyone with the URL. Ensure that you do not share the URL with anyone you do not want to have access to the application. In a production scenario, this application would be secured with authentication and authorization. To learn more on this topic, refer to the [Azure App Service Authentication and Authorization](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service?tabs=workforce-configuration) documentation.
 
+## Guide: Create CI/CD pipeline with GitHub Actions (optional)
+
+Create GitHub Actions CI/CD pipeline to automatically deploy changes of you code to the Web App. 
+
+**NOTE:** This challenge is optional. If you want to learn more about CI/CD pipelines, you can follow the documentation [Deploy to Azure App Service using GitHub Actions](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=openid%2Cpython%2Cpythonn) and setup CI/CD pipeline for your application.
+
 ## Guide: Delete your environment
 1. Navigate to the [Azure portal](https://portal.azure.com/#home) and login with your account.
 2. Navigate to your resource group.

@@ -1,7 +1,7 @@
 ![3](https://github.com/user-attachments/assets/dad008f7-0112-45a9-baa0-a2461a67130b)
 
 # Contact Center Operations using the Azure AI Platform
-Welcome to the Activate GenAI Hackathon! Today, you're set to dive into the transformative world of AI, with a focus on utilizing the power of Azure OpenAI services. Prepare yourself for a day of intense learning, innovation, and hands-on experience that will elevate your understanding of AI integration in application development.
+Welcome to the Contact Center Operations using the Azure AI Platform Hackathon! Today, you're set to dive into the transformative world of AI, with a focus on utilizing the power of Azure OpenAI services. Prepare yourself for a day of intense learning, innovation, and hands-on experience that will elevate your understanding of AI integration in application development.
 
 
 ## Introduction

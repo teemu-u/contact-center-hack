@@ -314,7 +314,7 @@ You should return your answer in the following JSON schema:
 
 ---
 
-## EXTRA Challenge: Your time to Prompt!  (optional)
+## Your time to Prompt!  (optional)
 
 Great! You have created this amazing flow. However, the Contact Center Operations Manager wants to add (even) more features to the service. He wants you to create a *node* called *generateServiceUpgradeOptions*. 
 
@@ -325,7 +325,7 @@ Go back to your Prompt Flow and add one more LLM node and write a structured Pro
 - Step-by-step
 - Output Requirements
 
-## EXTRA Challenge: Monitoring AI Applications (optional)
+## Monitoring AI Applications (optional)
 
 Now that you have such a great flow created, how do you monitor the data consumption of your endpoint? And of course, by data I can mean a lot of different things. Let's break it down:
 

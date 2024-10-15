@@ -26,7 +26,9 @@ GitHub Codespaces is a cloud-based development environment that allows you to co
 
 To open this repository in GitHub Codespaces, click on the button below:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/frsl92/genai_ws_callcenter_operations/tree/ts)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/frsl92/genai_ws_callcenter_operations/tree/main)
+
+**NOTE:** If GitHub Codespaces is not enabled in your GitHub organization, you can enable it by following the instructions [here](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization), or, if you cannot change your GitHub organization's settings, create free personal GitHub account [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
 After your Codespaces is created, please continue with next section.
 

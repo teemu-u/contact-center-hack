@@ -24,9 +24,11 @@ You will be able to test the application with all of the Audio Samples or, if av
 
 GitHub Codespaces is a cloud-based development environment that allows you to code from anywhere. It provides a fully configured environment that can be launched directly from any GitHub repository, saving you from lengthy setup times. You can access Codespaces from your browser, Visual Studio Code, or the GitHub CLI, making it easy to work from virtually any device.
 
-To open this repository in GitHub Codespaces, click on the button below:
+To open GitHub Codespaces, click on the button below:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/frsl92/genai_ws_callcenter_operations/tree/main)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/)
+
+Please select your forked repository from the dropdown and, if necessary, adjust other settings of GitHub Codespace.
 
 **NOTE:** If GitHub Codespaces is not enabled in your GitHub organization, you can enable it by following the instructions [here](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization), or, if you cannot change your GitHub organization's settings, create free personal GitHub account [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 

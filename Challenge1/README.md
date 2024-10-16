@@ -21,6 +21,10 @@ Azure AI Studio is a comprehensive toolchain that provides a unified experience 
 ### ![Azure Web App](./images/10035-icon-service-App-Services.svg) Azure Web App
 Azure Web App is a fully managed platform for building, deploying, and scaling web apps. It supports multiple programming languages and frameworks, including .NET, Java, Node.js, Python, and PHP. Azure Web App provides built-in auto-scaling and load balancing, along with a robust set of DevOps capabilities such as continuous deployment from GitHub, Azure DevOps, or any Git repository. It also offers integrated monitoring and diagnostics to ensure high availability and performance. With Azure Web App, you can quickly build and deploy mission-critical web applications that meet rigorous compliance requirements.
 
+## Preparation
+
+Before you start, please fork this repository to your GitHub account by clicking the `Fork` button in the upper right corner of the repository's main screen (or follow the [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)). This will allow you to make changes to the repository and save your progress.
+
 ## Resource Deployment Guide
 Clicking on button bellow will redirect you to the Azure portal to deploy the resources using the [ARM template](iac) provided in this repository.
 

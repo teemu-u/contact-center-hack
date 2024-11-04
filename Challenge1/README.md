@@ -110,20 +110,22 @@ If you prefer to deploy the resources manually, follow the steps below.
 13. In `Deployment Type`, select either *Standard* or *Global Standard*. **DO NOT select *Provisioned* or *Global Batch***.
 14. In the `Tokens per Minute Rate Limit (thousands)` select at least 200k. If this is blocked for you, there might be other resources consuming quota in your subscription. Please check with your subscription administrator.
 ![Create project](./images/gpt4omini.png)
-15. Return to the `Deployments` page.
-16. Click `+ Deploy model` and `Deploy base model`.
-17. Select `text-embedding-ada-002` and click `Confirm`.
-18. Click on `Customize`.
-19. Fill the `Deployment name`.
-20. In `Deployment Type`, select *Standard*.
-21. In the `Tokens per Minute Rate Limit (thousands)` select at least 100k. If this is blocked for you, there might be other resources consuming quota in your subscription. Please check with your subscription administrator.
+16. Click on `Deploy`.
+17. Return to the `Deployments` page.
+18. Click `+ Deploy model` and `Deploy base model`.
+19. Select `text-embedding-ada-002` and click `Confirm`.
+20. Click on `Customize`.
+21. Fill the `Deployment name`.
+22. In `Deployment Type`, select *Standard*.
+23. In the `Tokens per Minute Rate Limit (thousands)` select at least 100k. If this is blocked for you, there might be other resources consuming quota in your subscription. Please check with your subscription administrator.
 ![Create project](./images/textembeddings.png)
-22. Return to the `Hub Overview`.
-23. Click on `+ New project`.
+24. Click on `Deploy`.
+25. Return to the `Hub Overview`.
+26. Click on `+ New project`.
 ![Create project](./images/aihub_createproject.png)
-24. Give your project a name and click on `Create a project`.
+27. Give your project a name and click on `Create a project`.
 ![Create project 2](./images/aihub_createproject2.png)
-25. Wait for the project to be created.
+28. Wait for the project to be created.
 
 **NOTE:** In this guide we have deployed every resource using public networks to simplify the workshop. In a production scenario, you would restrict access to these resources to only the necessary services and networks by making use of Virtual Networks and Private Endpoints. To learn more, you can find a baseline architecture for this scenario [here](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat).
 

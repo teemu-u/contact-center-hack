@@ -1,8 +1,8 @@
 @allowed([
-  'swedencentral'
+  'eastus'
 ])
 @description('Azure location where resources should be deployed (e.g., swedencentral)')
-param location string = 'swedencentral'
+param location string = 'eastus'
 
 var prefix = 'hackai'
 var suffix = uniqueString(resourceGroup().id)
